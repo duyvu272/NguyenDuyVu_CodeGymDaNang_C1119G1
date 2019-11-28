@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let vatLi = prompt("Diem vat li : ","nhap diem li cua ban");
+    let sinhHoc = prompt("Diem sinh hoc : ","nhap diem sinh hoc");
+    let vanHoc = prompt("Diem van hoc : ","nhap diem li cua ban");
+    let v = parseInt(vatLi);
+    let s = parseInt(sinhHoc);
+    let vh = parseInt(vanHoc);
+    let avg = (v+s+vh)/3;
+
+    let sum = v+s+vh;
+
+    document.write("Diem trung binh : " + avg +"<br>");
+    document.write("Tong diem ca 3 mon : "+sum);
+
+</script>
+</body>
+</html>
