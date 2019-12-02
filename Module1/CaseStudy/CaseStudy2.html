@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 2</title>
+    <style>
+        #sh, #update {
+            display: none;
+
+        }
+
+        p {
+            margin: 2px;
+
+        }
+
+        button {
+            margin-top: 10px;
+            width: 70px;
+            height: 40px;
+            color: darkred;
+            background: cornflowerblue;
+        }
+
+        select {
+            margin-top: 10px;
+            width: 160px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<p id="p1">1</p>
+<p id="p2">2</p>
+<p id="p3">3</p>
+<p id="p4">4</p>
+<p id="p5">5</p>
+<p id="p6">6</p>
+<p id="p7">7</p>
+<p id="p8">8</p>
+<p id="p9">9</p>
+<p id="p10">10</p>
+<p id="p11">10</p>
+
+<script>
+    var name = "Nguyen Duy Vu";
+    var id = "152142599";
+    var dayOfBith = "2/27/1991";
+    var email = "nguyenduyvu@gmail.com";
+    var address = "Da Nang";
+    var typeMember = "Diamond";
+    var discount = "40";
+    var numPeople = "2";
+    var rentDay = "7";
+    var typeOfService = "Villa";
+    var typeOfRoom = "Vip";
+    var money;
+
+    if (typeOfService === "Villa") {
+        money = 500 * rentDay * (1 - discount / 100);
+    } else if (typeOfService === "House") {
+        money = 300 * rentDay * (1 - discount / 100);
+    } else
+        money = 100 * rentDay * (1 - discount / 100);
+    // Giam gia theo dia chi
+    if (address === "Da Nang")
+        money -= 30;
+    else if (address === "Hue")
+        money -= 10;
+    else
+        money = -5;
+    // Giam gia theo ngay nghi
+    if (rentDay > 7)
+        money -= 30;
+    else if (rentDay >= 5)
+        money -= 20;
+    else
+        money -= 10;
+
+    // Giam gia theo dia chi va tuoi
+    let currentYear = new Date().getFullYear();
+    let birthday = new Date(dayOfBith).getFullYear();
+    let ageCustomer = currentYear - birthday;
+    if (ageCustomer > 30 && address === "Da Nang")
+        money -= 2;
+    else if (ageCustomer > 20 && address === "Da Nang")
+        money -= 1;
+
+    // Hien thi thong tin
+    document.getElementById("p1").innerText = "Name : " + name;
+    document.getElementById("p2").innerText = "ID : " + id;
+    document.getElementById("p3").innerText = "Day Of Birth  : " + dayOfBith;
+    document.getElementById("p4").innerText = "Age : " + ageCustomer;
+    document.getElementById("p5").innerText = "Email : " + email;
+    document.getElementById("p6").innerText = "Address : " + address;
+    document.getElementById("p7").innerText = "Type of Member  : " + typeMember;
+    document.getElementById("p8").innerText = "Discount : " + discount;
+    document.getElementById("p9").innerText = "Amout of People : " + numPeople;
+    document.getElementById("p10").innerText = "Rent Day  : " + rentDay;
+    document.getElementById("p11").innerText = "Type of Service : " + typeOfService;
+    document.getElementById("p11").innerText = "Type of Room : " + typeOfRoom;
+    document.getElementById("p11").innerText = "Money : " + money;
+
+
+    function show() {
+        document.getElementById("sh").style.display = "block";
+    }
+
+    function edit(val) {
+
+
+        switch (val.value) {
+            case "1":
+                document.getElementById("update").style.display = "block";
+                let temp = prompt("Update name :"+name);
+                name = temp;
+                break;
+            case "2" :
+                document.getElementById("update").style.display = "block";
+                let temp1 = prompt("Update ID :"+id);
+                id = temp1;
+                break;
+                break;
+            case "3" :
+                document.getElementById("update").style.display = "block";
+                let temp2 = prompt("Update Day of Birth : "+birthday);
+                dayOfBith = temp2;
+                break;
+            case "4" :
+                document.getElementById("update").style.display = "block";
+                let temp3 = prompt("Update Email :"+email);
+                email = temp3;
+                break;
+            case "5" :
+                document.getElementById("update").style.display = "block";
+                let temp4 = prompt("Update address : "+address);
+                address = temp4;
+                break;
+            case "6" :
+                document.getElementById("update").style.display = "block";
+                let temp5 = prompt("Update type of member: "+typeMember);
+                typeMember = temp5;
+                break;
+            case "7" :
+                document.getElementById("update").style.display = "block";
+                let temp6 = prompt("Update discount : "+discount);
+                discount = temp6;
+                break;
+            case "8" :
+                document.getElementById("update").style.display = "block";
+                let temp7 = prompt("Update Amout of people :  "+numPeople);
+                numPeople = temp7;
+                break;
+            case "9" :
+                document.getElementById("update").style.display = "block";
+                let temp8 = prompt("Update Rent Day : " +rentDay);
+                rentDay = temp8;
+                break;
+            case "10" :
+                document.getElementById("update").style.display = "block";
+                let temp9 = prompt("Update Type of Service : "+typeOfService );
+                typeOfService = temp9;
+                break;
+            case "11" :
+                document.getElementById("update").style.display = "block";
+                let temp10 = prompt("Update Type of Room  : "+typeOfRoom);
+                typeOfRoom = temp10;
+                break;
+            default :
+                alert("Failed");
+                document.getElementById("edit").value = " ";
+
+
+        }
+
+    }
+
+    function show1(name1, id1, dayOfBith1, ageCustomer1, email1, address1, typeMember1, discount1, numPeople1, rentDay1, typeOfService1, typeOfRoom1, money1) {
+        name1 = name;
+        id1 = id;
+        dayOfBith1 = dayOfBith;
+        ageCustomer1 = ageCustomer;
+        email1 = email;
+        address1 = address;
+        typeMember1 = typeMember;
+        discount1 = discount;
+        numPeople1 = numPeople;
+        rentDay1 = rentDay;
+        typeOfService1 = typeOfService;
+        typeOfRoom1 = typeOfRoom;
+
+        document.getElementById("p1").innerText = "Name : " + name1;
+        document.getElementById("p2").innerText = "ID : " + id1;
+        document.getElementById("p3").innerText = "Day Of Birth  : " + dayOfBith1;
+        document.getElementById("p4").innerText = "Age : " + ageCustomer1;
+        document.getElementById("p5").innerText = "Email : " + email1;
+        document.getElementById("p6").innerText = "Address : " + address1;
+        document.getElementById("p7").innerText = "Type of Member  : " + typeMember1;
+        document.getElementById("p8").innerText = "Discount : " + discount1;
+        document.getElementById("p9").innerText = "Amout of People : " + numPeople1;
+        document.getElementById("p10").innerText = "Rent Day  : " + rentDay1;
+        document.getElementById("p11").innerText = "Type of Service : " + typeOfService1;
+        document.getElementById("p11").innerText = "Type of Room : " + typeOfRoom1;
+        document.getElementById("p11").innerText = "Money : " + money;
+        document.getElementById("update").style.display = "none";
+
+    }
+
+</script>
+<br>
+<button onclick="show()">Edit</button>
+<select id="sh" onchange="edit(this)">
+    <option>None</option>
+    <option value="1">Name</option>
+    <option value="2">ID</option>
+    <option value="3">Day of Birth</option>
+    <option value="4">Email</option>
+    <option value="5">Address</option>
+    <option value="6">Types of member</option>
+    <option value="7">Discount</option>
+    <option value="8">Amout of people</option>
+    <option value="9">Rent Day</option>
+    <option value="10">Types of Service</option>
+    <option value="11">Types sof room</option>
+    <option value="12">Room Service</option>
+</select>
+
+
+<button id="update" onclick="show1()">Update</button>
+</body>
+</html>

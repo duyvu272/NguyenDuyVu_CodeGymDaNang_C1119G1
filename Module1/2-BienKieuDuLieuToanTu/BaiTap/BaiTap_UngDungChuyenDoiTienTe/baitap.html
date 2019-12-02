@@ -4,44 +4,32 @@
     <meta charset="UTF-8">
     <title>Chuyen Doi Tien Te</title>
     <style>
-
-
-        form{
+        form {
             width: 900px;
             height: 100px;
         }
-        table{
+
+        table {
             width: 100px;
             height: 100px;
         }
     </style>
 </head>
 <body>
-
 <h4>Transfer System</h4>
 Amout <input type="text" name="Amout" id="a1" value="0">
 From Currency <select id="op1">
     <option value="vn">VND</option>
     <option value="us">USD</option>
-
 </select>
 To Currency
 <select id="op2">
-    <option value="vn" >VND</option>
+    <option value="vn">VND</option>
     <option value="us">USD</option>
-
 </select>
-
-
-  <p id="a"></p>
-
-
-
+<p id="a"></p>
 <!--   //<p id="a"></p>-->
-    <button onclick="b()">Convert</button>
-
-
-
+<button onclick="b()">Convert</button>
 <script>
 
     function b() {
@@ -49,21 +37,18 @@ To Currency
         let opt = document.getElementById("op2").value;
         let money = (document.getElementById("a1").value) * 1;
 
-        if (op === "us" && opt==="vn") {
+        if (op === "us" && opt === "vn") {
             let z = money * 23000;
             document.getElementById("a").innerHTML = "Result : " + z;
-
-        } else if (op==="vn" && opt==="us") {
-            let z1 = money/23000;
+        } else if (op === "vn" && opt === "us") {
+            let z1 = money / 23000;
             document.getElementById("a").innerHTML = "Result : " + z1;
 
         } else {
             document.getElementById("a").innerHTML = "Result : " + money;
         }
     }
-
 </script>
-
 
 </body>
 </html>

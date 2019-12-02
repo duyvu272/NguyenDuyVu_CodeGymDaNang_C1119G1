@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAI TAP : Tinh Nam Nhuan</title>
+    <style>
+        input {
+            width: 200px;
+            background: lavenderblush;
+            font-size: large;
+        }
+
+        p {
+            color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="nhap nam kiem tra" id="y">
+    <button onclick="checkY();return false;">Check</button>
+    ...<p id="result"></p>
+</form>
+<script>
+    let va = document.getElementById("y");
+
+    function checkY() {
+        let value0 = va.value % 4 === 0;
+        let value1 = va.value % 100 === 0;
+        let value2 = va.value % 400 === 0;
+
+
+        if ((value0 && value1) || (value1 && value2))
+            document.getElementById("result").innerText = "LA NAM NHUAN";
+        else
+            document.getElementById("result").innerText = "KHONG PHAI NAM NHUAN";
+
+
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh</title>
+</head>
+<body>
+<p>CACULATOR</p>
+<!--Tạo 2 ô imput nhập sô-->
+<input type="text" placeholder="nhap so a" id = "num1">
+<input type="text" placeholder="nhap so a" id = "num2">
+<br>
+
+<!--Tạo 4 nút cộng trừ nhân chia , truyyền hàm f() vào để thực hiện phép tính-->
+<button value="+"   onclick="f('+')" >Addition(+)</button>
+<button value="-"  onclick="f('-')" >Subtraction(-)</button>
+<button value="*"  onclick="f('*')" >Mutiplication(X)</button>
+<button value="/"  onclick="f('/')" >Division(/)</button>
+
+<!--Tạo vùng xuất giá tri-->
+<p id="show"></p>
+
+<!--Thực hiện phép tính trong script-->
+<script>
+   // Lấy giá trị trên 2 ô nhập vào phía trên
+    let number1 = document.getElementById("num1");
+    let number2 = document.getElementById("num2");
+
+    // viết hàm truyền giá trị để tính
+    function f(val) {
+        document.getElementById("show").innerText  = "Result :" + eval(number1.value +val+ number2.value);
+    }
+</script>
+
+</body>
+</html>

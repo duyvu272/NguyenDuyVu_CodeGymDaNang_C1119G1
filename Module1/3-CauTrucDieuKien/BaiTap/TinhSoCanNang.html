@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBM</title>
+</head>
+<body>
+<p>Nhap so can :</p>
+<input type="text"  placeholder="weight" id="w">
+<p>Nhap chieu cao</p>
+<input type="text"  placeholder="height" id="k">
+
+<button onclick="f()">Check</button>
+<p id="ibm"></p>
+
+<script>
+    let val = document.getElementById("k");
+    let val1 = document.getElementById("w");
+    // let ibm = val1.value/val.value;
+    //alert(ibm);
+    function f() {
+        let ibm = val1.value/val.value;
+        alert(ibm);
+        if(ibm>30)
+            document.getElementById("ibm").innerText = "Obese";
+        else
+            if(ibm>25)
+                document.getElementById("ibm").innerText = "Overweight";
+            else
+                if(ibm > 18.5)
+                    document.getElementById("ibm").innerText = "Normal";
+                else
+                    document.getElementById("ibm").innerText = "Underweight";
+
+    }
+    
+    
+</script>
+
+</body>
+</html>

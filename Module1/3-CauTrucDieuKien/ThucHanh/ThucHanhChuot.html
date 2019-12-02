@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+            animation-name: test;
+            animation-duration: 10s;
+        }
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+
+        /* Standard syntax */
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <img id="myImage" onmousemove="moveRight()"
+         src="https://cdn130.picsart.com/304842958125201.gif?r1024x1024"/>
+
+
+</form>
+<script>
+    let imgObj = null;
+    imgObj = document.getElementById('myImage');
+    function init() {
+        imgObj = document.getElementById('myImage');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    }
+    window.onload = init;
+
+</script>
+
+
+</body>
+</html>
