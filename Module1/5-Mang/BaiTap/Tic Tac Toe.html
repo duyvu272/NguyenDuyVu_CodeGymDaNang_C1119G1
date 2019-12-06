@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 
-
+<!--event.reventDeafault-->
 <body>
 <p id="a">
 
@@ -15,6 +15,8 @@
     let arr = [];
     let str = " ";
     let step = true;
+    let count = 0;
+    let q = 0;
 
     for (let i = 0; i < 5; i++) {
         arr[i] = new Array(".", ".", ".", ".", ".");
@@ -27,26 +29,21 @@
     }
     str += "<br>" + "<button onclick='change()'>change value</button>";
     u.innerHTML = str;
-
     function change() {
         let x = parseInt(prompt("Nhap vi tri x: "));
         let y = parseInt(prompt("Nhap vi tri y: "));
         str = "";
-        let win = 0;
+        count = 0;
         for (let i = 0; i < arr.length; i++) {
             str += "<br>";
-            let count = 0;
             for (let j = 0; j < arr[i].length; j++) {
-                if(count===3){
-                    alert("X win");
-                    break;
-                }
                 if (x === i && y === j) {
                     if (arr[i][j] === ".") {
                         if (step) {
                             str += "x" + "&nbsp&nbsp&nbsp&nbsp&nbsp";
                             arr[i][j] = 'x';
                             step = false;
+
                         } else {
                             str += "o" + "&nbsp&nbsp&nbsp&nbsp&nbsp";
                             arr[i][j] = 'o';
@@ -55,23 +52,29 @@
                     } else {
                         alert("Vi tri da dc danh vui long nhap lai");
                     }
-
                 } else
                     str += arr[i][j] + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-                if (arr[i][j]==="x") {
-                    count++;
-                }else
-                    count--;
+                    if (arr[i][j]=== 'x') {
+                        count++;
+                        // alert(count);
+                        q = count;
+                        if(q ===3){
+                            alert("X win");
+                            str+="<br>" +"<button style='display: none' ></button>";
+                            u.innerHTML = str;
+                            break;
+                        }
+                    }else
+                        count = 0;
             }
+
         }
         str += "<br>" + "<button onclick='change()'>change value</button>";
         u.innerHTML = str;
         // document.write(arr);
     }
-
-
+    document.write(count);
 </script>
-
 
 </body>
 </html>

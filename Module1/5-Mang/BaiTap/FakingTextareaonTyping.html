@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        textarea {
+            width: 600px;
+            height: 300px;
+            margin-left: 300px;
+
+        }
+    </style>
+</head>
+<body>
+
+<textarea id="txt"  onkeydown="check()">
+
+</textarea>
+
+
+<script>
+    let str = "Hai Co Tien Ba Co Tien Bon Co Tien";
+    let count = 0;
+    let t = " ";
+    // function press(event) {
+    //     event.preventDefault();
+    //     var t = document.getElementById("txt");
+    //     t.value += str.charAt(count);
+    //     count++;
+    // }
+    function check() {
+        let v = document.getElementById("txt");
+        if(count < str.length){
+            v.value = "";
+            v.value = t;
+            t+=str.charAt(count);
+            count++;
+
+        }else{
+            v.value = t;
+        }
+
+
+
+    }
+
+
+</script>
+
+</body>
+</html>
