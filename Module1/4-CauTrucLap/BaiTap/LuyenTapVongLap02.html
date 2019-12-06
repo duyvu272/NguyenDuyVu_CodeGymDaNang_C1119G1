@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap vong lap 02</title>
+</head>
+<body>
+<!--Bài 1: In dãy Finonaci-->
+<!--<script>-->
+<!--    let input = prompt("Nhap so muon hien thi :");-->
+<!--    let sum = 0;-->
+<!--    let num = 1;-->
+<!--    let num1 = 0;-->
+<!--    document.write(1 + " ");-->
+<!--    for(i = 0;i<input;i++){-->
+<!--        sum = num1 + num;-->
+<!--        document.write(sum + " ");-->
+<!--        num1 = num;-->
+<!--        num = sum;-->
+<!--    }-->
+
+<!--</script>-->
+
+<!--Bài 2: Tính giai thừa của một số nguyên dương-->
+<!--<button onclick="f1()">hehe</button>-->
+<!--<script>-->
+<!--    -->
+<!--  function f( input) {-->
+<!--      if(input>1){-->
+<!--          return f(input-1)*input;-->
+<!--      }-->
+<!--      return (input);-->
+<!--  }-->
+<!--  function f1() {-->
+<!--      let p = parseInt(prompt("nhap so de"));-->
+<!--      document.write(f(p));-->
+<!--  }-->
+<!--</script>-->
+
+<!--Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
+<!--<script>-->
+<!--    // for(let i = 0;i<=4;i++){-->
+<!--    //     for (let j = 0;j<=i;j++){-->
+<!--    //         document.write("*")-->
+<!--    //     }-->
+<!--    //     document.write("<br>");-->
+<!--    // }-->
+<!--    // for(let i = 4;i >=0;i--){-->
+<!--    //     for (let j = 0;j<=i;j++){-->
+<!--    //         document.write("*")-->
+<!--    //     }-->
+<!--    //     document.write("<br>");-->
+<!--    // }-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    let q = 0;-->
+<!--    for (let i = 1; i < 6; i++) {-->
+<!--        //document.write("*");-->
+<!--        for (let j = 0; j < 6; j++) {-->
+<!--            q = 6 - i;-->
+<!--            if (j < q)-->
+<!--                document.write('&nbsp&nbsp');-->
+<!--            else-->
+<!--                document.write("*");-->
+<!--        }-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    let q = 0;-->
+<!--    for (let i = 6; i >=1; i&#45;&#45;) {-->
+<!--        //document.write("*");-->
+<!--        for (let j = 0; j < 6; j++) {-->
+<!--            q = 6 - i;-->
+<!--            if (j < q)-->
+<!--                document.write('&nbsp&nbsp');-->
+<!--            else-->
+<!--                document.write("*");-->
+<!--        }-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--</script>-->
+
+
+
+<!--Bài 4: In hình chữ nhật-->
+<!--<script>-->
+<!--for(let i=0;i<6;i++){-->
+<!--    document.write("*");-->
+<!--    for(let j = 0;j<20;j++) {-->
+<!--        if (i === 0 || i === 5) {-->
+<!--            document.write("*");-->
+<!--        } else-->
+<!--            document.write('&nbsp&nbsp');-->
+<!--            }-->
+<!--    document.write("*");-->
+<!--    document.write("<br>");-->
+<!--}-->
+<!--</script>-->
+
+<!--Bài 6: In hình trái tim-->
+<script>
+    for(let i=0;i<=15;i++) {
+        document.write("*");
+        if (i < 6) {
+
+            for (let j = 0; j < 30; j++) {
+                if(j === 15 && i ===5)
+                document.write("*");
+                else
+                    document.write('&nbsp&nbsp');
+
+
+
+
+            }
+        }else{
+        for (let j = 0; j < i; j++) {
+            document.write("*");
+        }
+        let u1 = 15 - i;
+        u1 = u1 + 15;
+        let u2 = 0;
+        for (let u = 0; u <= u1; u++) {
+            u2 = u1 - i;
+            if (u < u2) {
+                document.write('&nbsp&nbsp');
+            } else
+                document.write('*');
+        }
+    }
+        document.write("*");
+        document.write("<br>");
+    }
+</script>
+
+
+
+
+</body>
+</html>

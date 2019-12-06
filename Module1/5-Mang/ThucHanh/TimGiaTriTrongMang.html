@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="num">
+<button onclick="check()">Check</button>
+
+<body>
+<script>
+
+    function check() {
+        let arr = [23,4,52,53,2,5,7,8,9];
+        let c = parseInt(document.getElementById("num").value);
+        let j = false;
+        for (let i = 0;i<arr.length-1;i++) {
+            if(c === arr[i]){
+                alert(c+ " Exist in Array");
+                j=true;
+                break;
+
+            }
+
+        }
+        if(!j)
+        alert(c+ " Does not exist in Array");
+
+
+
+    }
+
+
+
+</script>
+</body>
+</html>

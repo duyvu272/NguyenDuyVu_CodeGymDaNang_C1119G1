@@ -49,7 +49,6 @@
         money -= 20;
     else
         money -= 10;
-
     // Giam gia theo dia chi va tuoi
     var currentYear = new Date().getFullYear();
     var birthday = new Date(dayOfBith).getFullYear();
@@ -59,167 +58,164 @@
     else if (ageCustomer > 20 && address === "Da Nang")
         money -= 1;
 
-        num = prompt("1 : Show infomation :" + "\n2 : Edit infomation" + "\n 3 :Show the amount to be pay afer discount")
-        switch (num) {
-            case "1":
-                alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                    "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                    + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                );
-                break;
-            case "2":
-                let edit = prompt("1.Name " + name + "\n2.ID : " + id + "\n3.Day Of Birth : " + dayOfBith + "\n4.Email: " + email +
-                    "\n5.Address : " + address + "\n6.Type of Member : " + typeMember + "\n7.Discount : " + discount + "\n8.Amout of People : " + numPeople
-                    + "\nRent Day : " + rentDay + "\n10.Type of Service : " + typeOfService + "\n11.Type of Room : " + typeOfRoom + "\n12.Money : " + money
-                );
-                switch (edit) {
-                    case "1":
-                        let temp = prompt("Update name :" + name);
-                        name = temp;
+    // var pig = alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+    //     "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+    //     + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+    // );
+    // var pig1 = prompt("1.Name " + name + "\n2.ID : " + id + "\n3.Day Of Birth : " + dayOfBith + "\n4.Email: " + email +
+    //     "\n5.Address : " + address + "\n6.Type of Member : " + typeMember + "\n7.Discount : " + discount + "\n8.Amout of People : " + numPeople
+    //     + "\nRent Day : " + rentDay + "\n10.Type of Service : " + typeOfService + "\n11.Type of Room : " + typeOfRoom + "\n12.Money : " + money
+    // );
+
+
+    num = prompt("1 : Show infomation :" + "\n2 : Edit infomation" + "\n 3 :Show the amount to be pay afer discount")
+    switch (num) {
+        case "1":
+            alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+            );
+            break;
+        case "2":
+            var edit = prompt("1.Name " + name + "\n2.ID : " + id + "\n3.Day Of Birth : " + dayOfBith + "\n4.Email: " + email +
+                "\n5.Address : " + address + "\n6.Type of Member : " + typeMember + "\n7.Discount : " + discount + "\n8.Amout of People : " + numPeople
+                + "\nRent Day : " + rentDay + "\n10.Type of Service : " + typeOfService + "\n11.Type of Room : " + typeOfRoom + "\n12.Money : " + money
+            );
+            switch (edit) {
+                case "1":
+                    let temp = prompt("Update name :" + name);
+                    name = temp;
+                    var hihi = alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "2" :
+                    let temp1 = prompt("Update ID :" + id);
+
+                    id = temp1;
+
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+
+
+                    // alert(s.replace("ID "+id,"ID "+temp1));
+                    break;
+
+                case "3" :
+
+                    let temp2 = prompt("Update Day of Birth : " + dayOfBith);
+                    dayOfBith = temp2;
+                    birthday = new Date(dayOfBith).getFullYear();
+                    var ageCustomer = currentYear - birthday;
+                    if (ageCustomer > 30 && address === "Da Nang")
+                        money -= 2;
+                    else if (ageCustomer > 20 && address === "Da Nang")
+                        money -= 1;
+
+
+                    break;
+                case "4" :
+                    let temp3 = prompt("Update Email :" + email);
+                    email = temp3;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+
+                    break;
+                case "5" :
+                    let temp4 = prompt("Update address : " + address);
+                    address = temp4;
+                    if (address === "Da Nang")
+                        money -= 30;
+                    else if (address === "Hue")
+                        money -= 10;
+                    else
                         alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
                             "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
                             + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
                         );
-                        break;
-                    case "2" :
-                        let temp1 = prompt("Update ID :" + id);
-                        id = temp1;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
+                    break;
+                case "6" :
+                    let temp5 = prompt("Update type of member: " + typeMember);
+                    typeMember = temp5;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "7" :
+                    let temp6 = prompt("Update discount : " + discount);
+                    discount = temp6;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "8" :
+                    let temp7 = prompt("Update Amout of people :  " + numPeople);
+                    numPeople = temp7;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "9" :
+                    let temp8 = prompt("Update Rent Day : " + rentDay);
+                    rentDay = temp8;
+                    if (rentDay > 7)
+                        money -= 30;
+                    else if (rentDay >= 5)
+                        money -= 20;
+                    else
+                        money -= 10;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "10" :
+                    let temp9 = prompt("Update Type of Service : " + typeOfService);
+                    typeOfService = temp9;
+                    if (temp9 === "Villa") {
+                        money = 500 * rentDay * (1 - discount / 100);
+                    } else if (temp9 === "House") {
+                        money = 300 * rentDay * (1 - discount / 100);
+                    } else
+                        money = 100 * rentDay * (1 - discount / 100);
 
-                        break;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "11" :
+                    let temp10 = prompt("Update Type of Room  : " + typeOfRoom);
+                    typeOfRoom = temp10;
+                    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+                        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                default :
+                    alert("Failed");
 
-                    case "3" :
-
-                        let temp2 = prompt("Update Day of Birth : " + dayOfBith);
-                        dayOfBith = temp2;
-                        birthday = new Date(dayOfBith).getFullYear();
-                        var ageCustomer = currentYear - birthday;
-                        if (ageCustomer > 30 && address === "Da Nang")
-                            money -= 2;
-                        else if (ageCustomer > 20 && address === "Da Nang")
-                            money -= 1;
-
-
-                        break;
-                    case "4" :
-                        let temp3 = prompt("Update Email :" + email);
-                        email = temp3;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-
-                        break;
-                    case "5" :
-                        let temp4 = prompt("Update address : " + address);
-                        address = temp4;
-                        if (address === "Da Nang")
-                            money -= 30;
-                        else if (address === "Hue")
-                            money -= 10;
-                        else
-                            alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                                "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                                + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                            );
-                        break;
-                    case "6" :
-                        let temp5 = prompt("Update type of member: " + typeMember);
-                        typeMember = temp5;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-                        break;
-                    case "7" :
-                        let temp6 = prompt("Update discount : " + discount);
-                        discount = temp6;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-                        break;
-                    case "8" :
-                        let temp7 = prompt("Update Amout of people :  " + numPeople);
-                        numPeople = temp7;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-                        break;
-                    case "9" :
-                        let temp8 = prompt("Update Rent Day : " + rentDay);
-                        rentDay = temp8;
-                        if (rentDay > 7)
-                            money -= 30;
-                        else if (rentDay >= 5)
-                            money -= 20;
-                        else
-                            money -= 10;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-                        break;
-                    case "10" :
-                        let temp9 = prompt("Update Type of Service : " + typeOfService);
-                        typeOfService = temp9;
-                        if (temp9 === "Villa") {
-                            money = 500 * rentDay * (1 - discount / 100);
-                        } else if (temp9 === "House") {
-                            money = 300 * rentDay * (1 - discount / 100);
-                        } else
-                            money = 100 * rentDay * (1 - discount / 100);
-
-
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-                        break;
-                    case "11" :
-                        let temp10 = prompt("Update Type of Room  : " + typeOfRoom);
-                        typeOfRoom = temp10;
-                        alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
-                            "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
-                            + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
-                        );
-                        break;
-                    default :
-                        alert("Failed");
-                        document.getElementById("edit").value = " ";
-
-
-                }
-                break;
-            case "3":
-                alert("Total money you must pay : " + money);
-                break;
-            default:
-                alert("Failed");
-
-
-
+            }
+            break;
+        case "3":
+            alert("Total money you must pay : " + money);
+            break;
+        default:
+            alert("Failed");
 
     }
 
     // Hien thi thong tin
 
-
-
-
-
-
 </script>
-
-
-
-
-
-
 </body>
 </html>
 </body>

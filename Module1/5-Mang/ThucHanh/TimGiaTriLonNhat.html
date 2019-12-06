@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr = [12,4,25,64,75,3,54,7,44,53,23,85,32,3]
+    let max = 0;
+    let position = 0;
+    for(let i = 0;i<arr.length-1;i++){
+        if(arr[i]>max){
+            max = arr[i];
+            position = i;
+        }
+    }
+    document.write("number " +max +" is biggest , and position : " +position);
+</script>
+</body>
+</html>

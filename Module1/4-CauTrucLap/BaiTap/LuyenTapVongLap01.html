@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen Tap Vong Lap</title>
+</head>
+<body>
+<!--Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.-->
+<!--<p id="count"></p>-->
+<!--<script>-->
+<!--    for(var i=1;i<100;i++){-->
+<!--        document.getElementById("count").innerText = i;-->
+<!--        if(i==99){-->
+<!--            alert("Finished")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, -->
+<!--yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.-->
+<!--<script>-->
+<!--    let i = 0;-->
+<!--    i = parseInt(prompt("Nhap so nhiet do"));-->
+<!--    do{-->
+<!--        if(i>100){-->
+<!--            i = parseInt(prompt("Nhiet do cao qua, giam nhiet do"));-->
+<!--        }-->
+<!--        else if (i<20) {-->
+<!--            i = parseInt(prompt("Nhiet do thap qua, tang nhiet do"));-->
+<!--        }-->
+<!--    }while (i>100 || i < 20)-->
+<!--    -->
+<!--</script>-->
+
+
+
+<!--Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.-->
+<!--<script>-->
+<!--    document.write(0 + "" +1 + " ");-->
+<!--    let sum = 0;-->
+<!--    let num = 1;-->
+<!--    let num1 = 0;-->
+<!--    for(i = 0;i<19;i++){-->
+<!--        sum = num1 + num;-->
+<!--        document.write(sum + " ");-->
+<!--        num1 = num;-->
+<!--        num = sum;-->
+
+<!--    }-->
+
+<!--</script>-->
+
+
+<!--Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.-->
+<!--<script>-->
+<!--    document.write(1 + " ");-->
+<!--    let sum = 0;-->
+<!--    let num = 1;-->
+<!--    let num1 = 0;-->
+<!--    let num2 = 0;-->
+<!--   for(let i = 0;i<20;i++){-->
+<!--        sum = num1 + num;-->
+<!--        if(sum%5==0){-->
+<!--            num2 = sum;-->
+<!--            break;-->
+<!--        }-->
+<!--       //document.write(sum + " ");-->
+<!--        num1 = num;-->
+<!--        num = sum;-->
+<!--    }-->
+<!--    document.write("So chia het cho 5 la : " + num2);-->
+
+<!--</script>-->
+
+
+<!--Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci.-->
+<!--<script>-->
+<!--    document.write(0 + " " + 1 + " ");-->
+<!--    let sum = 0;-->
+<!--    let num = 1;-->
+<!--    let num1 = 0;-->
+<!--    let num2 = 0;-->
+<!--    for(i = 0;i<19;i++){-->
+<!--        sum = num1 + num;-->
+<!--            num2 += sum;-->
+<!--       document.write(sum + " ");-->
+<!--        num1 = num;-->
+<!--        num = sum;-->
+<!--    }-->
+<!--    document.write("<br> Tong so cua day Fibonaci : " + (num2 +1)*1);-->
+<!--</script>-->
+
+
+<!--Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.-->
+<!--<script>-->
+<!--    let sum = 0;-->
+<!--    for(var i = 0, a=7; i<30;a++){-->
+<!--        if(a%7==0){-->
+<!--            sum += a;-->
+<!--            document.write(a + " ");-->
+<!--            i++;-->
+<!--        }-->
+<!--    }-->
+<!--    document.write("<br>Tong so chia het cho 7 : " +sum);-->
+<!--</script>-->
+
+
+<!--Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz",-->
+<!--5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".-->
+<!--<script>-->
+<!--    for (let i = 1; i <= 100; i++) {-->
+<!--        if (i%3===0 && i%5===0)-->
+<!--            document.write("FizzBuzz" + " ");-->
+<!--        else if (i % 5 ===0)-->
+<!--            document.write("Buzz" + " ");-->
+<!--            else if(i%3===0)-->
+<!--                document.write("Fizz" + " ")-->
+<!--            else-->
+<!--                document.write(i+" ");-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 8: Game đoán số-->
+<!--<button onclick="f()" id="btn">Start</button>-->
+<!--<script>-->
+<!--    function f() {-->
+<!--        let count = 0;-->
+<!--        let lucky = Math.floor(Math.random() * 10);-->
+
+<!--        while (count < 4) {-->
+
+<!--            let input = parseInt(prompt("Nhap so may man"));-->
+<!--            count++;-->
+<!--            if (input === lucky) {-->
+<!--                alert("YOU WIN");-->
+<!--                break;-->
+<!--            }-->
+<!--        }-->
+<!--        if (count === 4) {-->
+<!--            alert("YOU ARE LOSER");-->
+<!--        }-->
+<!--    }-->
+<!--//</script>-->
+
+
+</body>
+</html>

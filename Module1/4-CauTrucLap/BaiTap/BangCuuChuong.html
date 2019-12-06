@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang Cuu Chuong</title>
+<!--    <style>-->
+<!--         td{-->
+<!--            border: 1px solid darkgrey;-->
+<!--        }-->
+<!--        td, th {-->
+<!--            width: 80px;-->
+<!--            height: 20px;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--    </style>-->
+</head>
+<body>
+
+    <script>
+        let tab =  "<table border='1px' width='300px' cellspacing='0' cellpadding='3px'>";
+
+        for (let i = 1,k=2; i < 10; i++,k++) {
+            tab = tab + "<tr border ='1px  solid darkgrey'>";
+            for (j = 2; j < 10; j++) {
+                let sum = j*i;
+               tab = tab + ("<td>"+ j + "x"  + i + "="+sum+"</td>");
+            }
+            tab = tab + "</tr>";
+        }
+
+      tab = tab +  "</table>";
+        document.write(tab);
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

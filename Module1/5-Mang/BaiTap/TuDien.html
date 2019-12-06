@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TuDien</title>
+</head>
+<body>
+<input id="ip" value="" placeholder="input word">
+<button onclick="find()">Find</button>
+<p id="result"></p>
+
+
+<script>
+    let arr = ["gnaw", "bite", "chew", "swallow", "taste", "glug", "nibble", "digest"];
+    let arr1 = ["gặm", "cắn", "nhai", "nuốt", "nếm", "uống ừng ực", "gặm nhấm từng ít một", "tiêu hoá"];
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    function find() {
+        let input = document.getElementById("ip").value;
+        let str ="";
+        for (let i = 0; i < input.length; i++) {
+            if (UPPER.indexOf(input.charAt(i)) !== -1) {
+                str += input.charAt(i).toLocaleLowerCase();
+            } else
+                str += input.charAt(i);
+        }
+        let a = false;
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (str === arr[i]) {
+                a = true;
+                document.getElementById("result").innerText = input + ": " + arr1[i];
+                break;
+            }
+        }
+        if (!a) {
+            document.getElementById("result").innerText = "The word not exit";
+        }
+
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<p id="a">
+
+</p>
+<script>
+    let u = document.getElementById("a");
+    let arr = [];
+    let str = " ";
+    let step = true;
+
+    for (let i = 0; i < 5; i++) {
+        arr[i] = new Array(".", ".", ".", ".", ".");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        str += "<br>";
+        for (let j = 0; j < arr[i].length; j++) {
+            str += arr[i][j] + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+        }
+    }
+    str += "<br>" + "<button onclick='change()'>change value</button>";
+    u.innerHTML = str;
+
+    function change() {
+        let x = parseInt(prompt("Nhap vi tri x: "));
+        let y = parseInt(prompt("Nhap vi tri y: "));
+        str = "";
+        let win = 0;
+        for (let i = 0; i < arr.length; i++) {
+            str += "<br>";
+            let count = 0;
+            for (let j = 0; j < arr[i].length; j++) {
+                if(count===3){
+                    alert("X win");
+                    break;
+                }
+                if (x === i && y === j) {
+                    if (arr[i][j] === ".") {
+                        if (step) {
+                            str += "x" + "&nbsp&nbsp&nbsp&nbsp&nbsp";
+                            arr[i][j] = 'x';
+                            step = false;
+                        } else {
+                            str += "o" + "&nbsp&nbsp&nbsp&nbsp&nbsp";
+                            arr[i][j] = 'o';
+                            step = true;
+                        }
+                    } else {
+                        alert("Vi tri da dc danh vui long nhap lai");
+                    }
+
+                } else
+                    str += arr[i][j] + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+                if (arr[i][j]==="x") {
+                    count++;
+                }else
+                    count--;
+            }
+        }
+        str += "<br>" + "<button onclick='change()'>change value</button>";
+        u.innerHTML = str;
+        // document.write(arr);
+    }
+
+
+</script>
+
+
+</body>
+</html>

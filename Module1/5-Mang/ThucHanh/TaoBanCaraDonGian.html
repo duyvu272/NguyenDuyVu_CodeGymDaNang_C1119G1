@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<p id="a">
+
+</p>
+<script>
+        let u = document.getElementById("a");
+        let arr = [];
+        let str = " ";
+        for(let i = 0;i<5;i++){
+            arr[i] = new Array(0,0,0,0,0);
+        }
+        for (let i = 0;i<arr.length;i++){
+            str +="<br>";
+            for (let j= 0;j<arr[i].length;j++){
+                str +=arr[i][j] + "&nbsp&nbsp";
+            }
+        }
+        str+="<br>" + "<button onclick='change()'>change value</button>";
+     u.innerHTML = str;
+
+
+    function change(){
+        let x = parseInt(prompt("Nhap vi tri x: ") );
+        let y = parseInt(prompt("Nhap vi tri y: ")) ;
+        str="";
+        for(let i = 0;i<arr.length;i++){
+            str +="<br>";
+                for(let j = 0;j<arr[i].length;j++){
+                    if(x===i&&y===j){
+                        str+="x" +  "&nbsp&nbsp";
+                        arr[i][j] = "x";
+                }else
+                        str +=arr[i][j] + "&nbsp&nbsp";
+
+            }
+        }
+        str+="<br>" + "<button onclick='change()'>change value</button>";
+        u.innerHTML = str;
+    }
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

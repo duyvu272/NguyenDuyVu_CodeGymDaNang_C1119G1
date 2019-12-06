@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+        h1{
+            margin-bottom: 40px;
+            font-family: sans-serif;
+        }
+        .switch{
+            position: relative;
+            display: inline-block;
+            width: 110px;
+            height: 60px;
+            margin: 0 10px;
+        }
+        .slider{
+            position: absolute;
+            cursor: pointer;
+            top : 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+
+        }
+        .switch input {display: none}
+        .slider:before{
+            position: absolute;
+            content: " ";
+            height: 50px;
+            width:50px ;
+            left: 5px;
+            bottom: 5px;
+            background-color: lavender ;
+            transition: 0.4s;
+            border-radius: 50px;
+
+        }
+        input:checked + .slider{
+            background-color: #ff278c;
+        }
+        input:checked + .slider:before{
+            transform:translateX(50px) ;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Toogle</h1>
+
+        <label class="switch">
+        <input type="checkbox" id ="b1" onclick="check()">
+            <span class="slider" id="sp1"></span>
+        </label>
+
+        <br>
+        <label class="switch">
+        <input type="checkbox" checked id="b2" onclick="check()">
+        <span class="slider"></span>
+        </label>
+        <br>
+
+        <label class="switch">
+        <input type="checkbox" id="b3" onclick="check()">
+        <span class="slider"></span>
+        </label>
+        <br>
+
+
+
+
+
+    </div>
+
+<script>
+
+function check(){
+
+    let check1 = document.getElementById("b1");
+    let check2 = document.getElementById("b2");
+    let check3 = document.getElementById("b3");
+
+
+
+    if(check1.checked) {
+        if (check2.checked && check3.checked) {
+            check1.checked = false;
+        } else if (check3.checked && check2.checked) {
+            check2.checked = false;
+
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

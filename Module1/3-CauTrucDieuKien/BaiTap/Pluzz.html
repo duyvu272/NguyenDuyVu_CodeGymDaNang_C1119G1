@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .container-fluid {
+            max-width: 940px;
+        }
+        .puzzles {
+            margin-top: 1em;
+            margin: auto;
+        }
+        img {
+            border-style: solid;
+            display: block;
+            margin-left: 400px;
+            margin-right: auto;
+            padding: 0.2em;
+            box-shadow: 2px 3px 3px black;
+            width: 600px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="puzzles">
+        <img id="img1" src="1.jpg" alt="" onclick="f(1)"/>
+        <img id="img2" src="2.jpg" alt="" onclick="f(2)"/>
+        <img id="img3" src="c3.png" alt="" onclick="f(3)"/>
+        <img id="img4" src="4.jpg" alt="" onclick="f(4)"/>
+        <img id="img5" src="c5.png" alt="" onclick="f(5)"/>
+    </div>
+</div>
+<script>
+    function f(n) {
+        let countJ = 0;
+        let countP = 0;
+        let i = document.getElementById("img" + n);
+        if (i.src === ("http://localhost:63342/Module1/3-CauTrucDieuKien/BaiTap/" + n + ".jpg")) {
+            document.getElementById("img" + n).src = "c" + n + ".png";
+            for (let i = 1; i < 6; i++) {
+                let filename = document.getElementById("img" + i).src;
+                let extenx = filename.split('.').pop();
+                if (extenx === "jpg")
+                    countJ++;
+                else
+                    countP++;
+            }
+
+        } else {
+            document.getElementById("img" + n).src = n + ".jpg";
+            for (let i = 1; i < 6; i++) {
+                let filename = document.getElementById("img" + i).src;
+                let extenx = filename.split('.').pop();
+                if (extenx === "png")
+                    countP++;
+                else
+                    countJ++;
+
+            }
+
+        }
+        if (countJ === 5) {
+            for (let i = 1; i < 6; i++) {
+                document.getElementById("img" + i).style.borderColor = "coral";
+            }
+        } else if (countP === 5) {
+            for (let i = 1; i < 6; i++) {
+                document.getElementById("img" + i).style.borderColor = "pink";
+
+            }
+
+        } else
+            for (let i = 1; i < 6; i++) {
+                document.getElementById("img" + i).style.borderColor = "black";
+            }
+
+
+    }
+
+</script>
+</body>
+</html>

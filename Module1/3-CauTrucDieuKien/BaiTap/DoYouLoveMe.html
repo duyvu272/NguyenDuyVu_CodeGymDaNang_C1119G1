@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>DO YOU LOVE ME!!!!!!!!!!</h1>
+<button onclick="yes()">Yes</button> <button onmouseover="move()" id="btn">No</button>
+
+
+<script>
+    let a = null;
+    a = document.getElementById("btn");
+    function init() {
+        a = document.getElementById('btn');
+        a.style.position = 'relative';
+        a.style.left = '0px';
+    }
+    function yes() {
+        alert("<3")
+
+    }
+    function move() {
+        a.style.left = parseInt(a.style.left) + 60 + 'px';
+
+    }
+    window.onload = init;
+
+</script>
+
+</body>
+</html>
