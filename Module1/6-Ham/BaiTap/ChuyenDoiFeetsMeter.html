@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Chuyen Foot thanh Met : <input type="text" placeholder="Nhap so Foot" oninput="convertMeter(this.value)" onchange ="convertMeter(this.value)">
+<p id="showMet"></p>
+Chuyen met thanh Foot : <input type="text" placeholder="Nhap so Met" oninput="convertFoot(this.value)" onchange="convertFoot(this.value)" id="ip">
+<p id="showMet1"></p>
+
+<script>
+    function convertMeter(foot) {
+        let a = 0.305 * foot;
+        document.getElementById("showMet").innerText =foot +"ft" + " = " + a +"m";
+        return a;
+    }
+
+    function convertFoot(meter) {
+      let  a= 3.279 * meter;
+        document.getElementById("showMet1").innerText =meter+ "m" +" bang : " +a +"ft";
+        return a;
+    }
+
+
+
+</script>
+</body>
+</html>

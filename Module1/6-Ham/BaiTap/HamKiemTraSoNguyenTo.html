@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="showPrime()">Input</button>
+<script>
+
+    function checkIsPrime(num) {
+        if (num === 2 || num === 3)
+            return true;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function showPrime() {
+        let count = 0;
+        let num = prompt("nhap so :");
+        for (let i = 3; count < num; i+=2) {
+            if (checkIsPrime(i)) {
+                count++;
+                document.write(i + " ");
+            }
+
+        }
+    }
+
+
+</script>
+</body>
+</html>

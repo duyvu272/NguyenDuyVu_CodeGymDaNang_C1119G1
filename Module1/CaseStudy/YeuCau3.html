@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = "0123456789";
+    let checkEmail = true;
+    let email;
+
+    let check1 = -1;
+    let checkDay = true;
+    // check name
+    let formatName = /[!#$.%^&*()_+\-=\[\]{};':"\\|,<>\/?]/;
+    let name;
+    let checkName = true;
+    do {
+        name = prompt("Input Name : ");
+        if (name.trim().length === 0) {
+            checkName = false;
+            alert("Nhap ten vo di pa :");
+            continue;
+        }
+        checkName = true;
+        if (formatName.test(name)) {
+            checkName = false;
+            continue;
+        }
+        for (let i = 0; i < name.length; i++) {
+            if (!isNaN(name.charAt(i))) {
+                if (name.charAt(i) === " ") {
+                    checkName = true;
+                } else {
+                    checkName = false;
+                    break;
+                }
+
+            }
+
+        }
+    } while (!checkName);
+    let tempName = "";
+    if (name.charAt(0) !== " ")
+        tempName += name.charAt(0).toLocaleUpperCase();
+    for (let i = 1; i < name.length; i++) {
+        if (name.charAt(i) !== " ") {
+            if (name.charAt(i - 1) === " ")
+                tempName += name.charAt(i).toLocaleUpperCase();
+            else
+                tempName += name.charAt(i).toLocaleLowerCase();
+            if (name.charAt(i + 1) === " ")
+                tempName += " ";
+        }
+    }
+    name = tempName;
+
+    // check ID
+    let id;
+    let idCheck = true;
+    let formatID = /[!#$.%^&*()_+\-=\[\]{};':"\\|,<>\/?]/;
+
+    do {
+
+        if (idCheck)
+            id = prompt("ID : ");
+        else
+            id = prompt("Nhap sai id, nhap theo dinh dang XXXXXXXX\n Trong do X la so nguyen duong");
+        idCheck = true;
+        if (id.trim().length === 0 || formatID.test(id)) {
+            idCheck = false;
+            continue;
+        }
+
+        for (let i = 0; i < id.length; i++) {
+            if (isNaN(id.charAt(i))) {
+                idCheck = false;
+                break;
+            }
+            if (id.length === " ") {
+                idCheck = false;
+                break;
+            }
+        }
+        if (id.length > 8 || id.length < 7) {
+            idCheck = false;
+        }
+    } while (!idCheck) ;
+
+    // check sinh nhật
+    let dayOfBith;
+    let formatDay = /[!#$.%^&*()_+\-=\[\]{};':"\\|,<>?]/;
+    do {
+        if (checkDay)
+            dayOfBith = prompt("Day of Birth : ");
+        else
+            dayOfBith = prompt("Vui long nhap dung dinh dang DD/MM/YYYY : ");
+        if (dayOfBith.trim().length === 0) {
+            checkDay = false;
+            continue;
+        }
+        let arr = dayOfBith.split("/");
+        if (isNaN(arr[0]) || isNaN(arr[1]) || isNaN(arr[2]) || formatDay.test(dayOfBith) || arr.length > 3) {
+            checkDay = false;
+            continue;
+        }
+        if (Number(arr[0]) > 31 || Number(arr[0]) < 0 || Number(arr[1]) < 1 || Number(arr[1]) > 12 || Number(arr[2]) < 1940 || Number(arr[0]) > 2010) {
+            checkDay = false;
+            continue;
+        }
+        checkDay = true;
+
+    } while (!checkDay);
+
+
+    // check mail
+
+    let format = /[!#$%^&*()_+\-=\[\]{};':"\\|,<>\/?]/;
+    do {
+        if (checkEmail)
+            email = prompt("Email : ");
+        else
+            email = prompt("Nhap Sai Dinh Dang \nVui Long Nhap Lai Email Theo Dinh Dang abc@abc.abc: ");
+        checkEmail = true;
+        if (format.test(email) || email.trim().length === 0 || !isNaN(email)) {
+            checkEmail = false;
+            break;
+        }
+        let countE = 0;
+        let t = 0;
+        for (let i = 0; i < email.length; i++) {
+            if (email.charAt(i) === "@") {
+                countE++;
+                check1 = i;
+            }
+            if (email.charAt(i) === ".") {
+                t = i;
+            }
+            if (email.charAt(i) === " ") {
+                checkEmail = false;
+                break;
+            }
+        }
+        let countCham = 0;
+        for (let j = check1; j < email.length; j++) {
+            if (email.charAt(j) === ".") {
+                countCham++;
+            }
+        }
+
+        if (t < 1 || t > email.length || check1 === 0 || check1 === email.length - 1 || t < check1 || countE > 1 || email.charAt(t + 1) === "" || countCham > 1 || email.charAt(check1 + 1) === "." || email.length - 1 === t) {
+            checkEmail = false;
+            continue;
+        }
+    } while (!checkEmail);
+
+    let formatAdress = /[!#$%^&*.()_+\-=\[\]{};':"\\|,<>?]/;
+    let address;
+    let checkAddress1 = true;
+    do {
+        if (checkAddress1)
+            address = prompt("Address : ");
+        else
+            address = prompt("nhap dia chi di pa :");
+
+        checkAddress1 = true;
+        if (formatAdress.test(address) || address.trim().length === 0) {
+            checkAddress1 = false;
+            continue;
+        }
+
+    } while (!checkAddress1);
+
+    let tempAdress = "";
+    if (address.charAt(0) !== " ")
+        tempAdress += address.charAt(0).toLocaleUpperCase();
+    for (let i = 1; i < address.length; i++) {
+        if (address.charAt(i) !== " ") {
+            if (address.charAt(i - 1) === " ")
+                tempAdress += address.charAt(i).toLocaleUpperCase();
+            else
+                tempAdress += address.charAt(i).toLocaleLowerCase();
+            if (address.charAt(i + 1) === " ")
+                tempAdress += " ";
+        }
+    }
+    address = tempAdress;
+
+    let formatType = /[!#$%^&*.()_+\-=\[\]{};':"\\|,<>?]/;
+    let typeMember;
+    let checkTypeMember = true;
+    let tempP1 = "";
+    do {
+        if (checkTypeMember)
+            typeMember = prompt("Type Member : " + " \n" + " Diamond " + " \n" + " Platinum" + " \n" + " Gold" + " \n" + " Silver" + " \n" + " Member");
+        else
+            typeMember = prompt("Nhap sai vui long nhap theo danh sach duoi: " + " \n" + " Diamond " + " \n" + " Platinum" + " \n" + " Gold" + " \n" + " Silver" + " \n" + " Member");
+        checkTypeMember = true;
+        if (formatType.test(typeMember) || typeMember.trim().length === 0) {
+            checkTypeMember = false;
+            continue;
+        }
+        let tempP = typeMember.trim();
+        tempP1 += typeMember.charAt(0).toLocaleUpperCase();
+        for (let i = 1; i < tempP.length; i++) {
+            tempP1 += tempP.charAt(i).toLocaleLowerCase();
+        }
+        if (tempP1 === "Diamond" || tempP1 === "Platinum" || tempP1 === "Gold" || tempP1 === "Silver" || tempP1 === "Member")
+            checkTypeMember = true;
+        else
+            checkTypeMember = false;
+    } while (!checkTypeMember);
+    typeMember = tempP1;
+
+
+    // check discount
+    let formatD = /[!#$%^&*.()_+\-=\[\]{};':"\\|,<>\/?]/;
+    let discount;
+    let checkDiscount = true;
+    do {
+        if (checkDiscount)
+            discount = prompt("Discount : " + "\n" + "Input 0 - 100");
+        else
+            discount = prompt("Nhap sai vui long nhap so nguyen duong : " + "\n" + "Input 0 - 100");
+        if (isNaN(discount) || Number.isInteger(discount) || Number(discount) < 0 || formatD.test(discount)) {
+            checkDiscount = false;
+            continue;
+        }
+        checkDiscount = true;
+
+    } while (!checkDiscount);
+
+    // check so người
+    let numPeople;
+    let checkNum = true;
+    do {
+        if (checkNum)
+            numPeople = prompt("Number of people : " + "\n");
+        else
+            numPeople = prompt("Nhap sai vui long nhap so nguyen duong : " + "\n" + "Input 0 - 100");
+        if (isNaN(numPeople) || Number.isInteger(numPeople) || Number(numPeople) < 0 || formatD.test(numPeople)) {
+            checkNum = false;
+            continue;
+        }
+        checkNum = true;
+
+    } while (!checkNum);
+
+    // check ngày thuê
+    let rentDay;
+    let checkRent = true;
+    do {
+        if (checkRent)
+            rentDay = prompt("Rent Day : " + "\n");
+        else
+            rentDay = prompt("Nhap sai vui long nhap so nguyen duong : " + "\n" + "Input 0 - 100");
+        if (isNaN(rentDay) || Number.isInteger(rentDay) || Number(rentDay) < 0 || formatD.test(rentDay) || rentDay.trim().length === 0) {
+            checkRent = false;
+            continue;
+        }
+        checkRent = true;
+    } while (!checkRent);
+
+
+    let typeOfService = prompt("Type of Service : " + " \n" + " Villa" + " \n" + " House" + " \n" + " Room");
+    let typeOfRoom = prompt("Type of Room : " + " \n" + " Vip" + " \n" + " Business" + " \n" + " Normal");
+    let money;
+    if (typeOfService === "Villa") {
+        money = 500 * rentDay * (1 - discount / 100);
+    } else if (typeOfService === "House") {
+        money = 300 * rentDay * (1 - discount / 100);
+    } else
+        money = 100 * rentDay * (1 - discount / 100);
+
+
+    alert("Name " + name + "\nID : " + id + "\nDay Of Birth : " + dayOfBith + "\nEmail: " + email +
+        "\nAddress : " + address + "\nType of Member : " + typeMember + "\nDiscount : " + discount + "\nAmout of People : " + numPeople
+        + "\nRent Day : " + rentDay + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+    );
+
+
+</script>
+</body>
+</html>

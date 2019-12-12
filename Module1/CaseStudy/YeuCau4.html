@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // do{
+    //
+    // }while (!press)
+    //
+
+
+    let choice = prompt("1. Add new Customer " + "\n 2. Delete Customer");
+    let arr = [];
+    let listCustomer = ["Nguyen Duy Vu", "Ngo Thanh Tam", "Ho Ngoc Ha", "Ngoc Trinh", "Angle Phuong Trinh", "My Tam", "Thuy Chi", "Kim Kardishian", "Thuy Linh", "Vang Anh"];
+    switch (choice) {
+        case "1" :
+            let num = prompt("Input number customer want to add :");
+            for (let i = 0; i < num; i++) {
+                let num = prompt("Customer : " + i);
+                arr[i] = num + "\n";
+            }
+            let str = "";
+            for (let i = 0; i < num; i++) {
+                str += i + ". " + arr[i].split(",");
+            }
+            alert("List Customers : " + "\n" + str);
+            arr.sort();
+            let str1 = "";
+            for (let i = 0; i < num; i++) {
+                str1 += i + ". " + arr[i].split(",");
+            }
+            alert("List Customers : " + "\n" + str1);
+            break;
+        case "2" :
+            let str2 = "";
+            for (let i = 0; i < listCustomer.length; i++) {
+                str2 += i + ". " + listCustomer[i].split(",") + "\n";
+            }
+            let inpt = parseInt(prompt("List Customers : " + "\n" + str2));
+            let str3 = "";
+            let j = 0;
+            for (let i = 0; i < listCustomer.length; i++) {
+                if (inpt === i)
+                    listCustomer.splice(inpt, 1);
+                else {
+                    str3 += j + " . " + listCustomer[i].split(",") + "\n";
+                    j++;
+                }
+            }
+            alert(str3);
+        //alert(listCustomer);
+    }
+</script>
+</body>
+</html>

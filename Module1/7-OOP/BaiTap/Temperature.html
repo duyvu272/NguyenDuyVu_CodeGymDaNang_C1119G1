@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function Temperature(temp) {
+        this.temp = temp;
+        this.convertToF = function () {
+            return temp*1.8 + 32.0;
+        }
+        this.convertToK = function () {
+            return temp + 273.15;
+
+        }
+        this.getT = function () {
+            return this.temp;
+        }
+
+    }
+    let temp = new Temperature(25.0);
+    alert("F = "+ temp.convertToF() + "\n" + "K = "+temp.convertToK());
+
+</script>
+</body>
+</html>

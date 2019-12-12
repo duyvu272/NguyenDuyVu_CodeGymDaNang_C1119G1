@@ -29,20 +29,17 @@
     //     t.value += str.charAt(count);
     //     count++;
     // }
+    let v = document.getElementById("txt");
     function check() {
-        let v = document.getElementById("txt");
         if(count < str.length){
             v.value = "";
             v.value = t;
             t+=str.charAt(count);
             count++;
-
         }else{
+
             v.value = t;
         }
-
-
-
     }
 
 

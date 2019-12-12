@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+function Rectaglo(widthR,height) {
+    this.widthR = widthR;
+    this.height = height;
+
+    this.erea = function () {
+        return this.widthR*this.height;
+    }
+    this.Circumference = function () {
+        return (this.height+this.widthR)*2;
+    }
+    this.getWidth = function () {
+        return widthR;
+    }
+    this.getHeight = function () {
+        return height;
+    }
+    this.setWidthR = function (widthR) {
+        this.widthR = widthR;
+    }
+    this.setHeight =function (height) {
+        this.height = height;
+    }
+    this.display = function () {
+        return "Erae = " + this.erea() + "\n " + "Circumference = " + this.Circumference();
+
+    }
+
+
+};
+    
+    // let r = new Rectaglo(4,7);
+    // //alert(r.display());
+    // r.setHeight(10);
+    // r.setWidthR(10);
+    // alert(r.display());
+    
+    function createRectaglo() {
+      let t =  document.getElementById("myCanvas").getContext("2d");
+        let rectanglo = new Rectaglo(100,50);
+        t.beginPath();
+        t.rect(20,20,rectanglo.getWidth(),rectanglo.getHeight());
+        t.stroke();
+    }
+    createRectaglo();
+    
+</script>
+</body>
+</html>
