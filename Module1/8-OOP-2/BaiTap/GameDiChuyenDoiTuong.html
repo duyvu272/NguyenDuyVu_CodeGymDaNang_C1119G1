@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+<div id="game"></div>
+
+<script>
+    /**
+     * Created by nhatnk on 4/26/17.
+     */
+
+    function Pika(image, top, left, right, bottom, size) {
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+        this.right = right;
+        this.bottom = bottom;
+
+        this.getPikachuTop = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;transform:rotate(90deg)" />';
+        };
+        this.getPikachuTopUp = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.bottom + 'px; left:' + this.left + 'px;position:absolute;transform:rotate(-90deg)" />';
+        };
+        this.getPikachutBot = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
+        };
+        this.getPikachuLeft = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.bottom + 'px; left:' + this.right + 'px;position:absolute;transform: scale(-1,1)" />';
+        };
+        this.moveRight = function () {
+            this.left += 40;
+            console.log('right: ' + this.left);
+        };
+        this.moveLeft = function () {
+            this.right -= 40;
+            console.log('Left: ' + this.right);
+        };
+        this.moveTopUp = function () {
+            this.top += 40;
+            console.log('Top up: ' + this.top);
+        };
+        this.moveTopDown = function () {
+            this.bottom -= 40;
+            console.log('bottom : ' + this.bottom);
+        }
+    }
+
+
+    // function start(evt){
+    //     switch (evt.keyCode) {
+    //         case 37 :
+    //             hero.moveLeft();
+    //             document.getElementById('game').innerHTML = hero.getPikachuElement();
+    //             break;
+    //         case 38:
+    //             hero.moveTopDown();
+    //             document.getElementById('game').innerHTML = hero.getHeroElementTopUp();
+    //             break;
+    //             break;
+    //         case 39:
+    //             hero.moveRight();
+    //             document.getElementById('game').innerHTML = hero.getHeroElementBot();
+    //             break;
+    //         case 40:
+    //             hero.moveTopUp();
+    //             document.getElementById('game').innerHTML = hero.getHeroElementTop();
+    //             break;
+    //     }
+    //
+    //
+    // }
+    // function docReady() {
+    //     window.addEventListener('keydown', start);
+    // }
+    let poke = new Pika('tenor.gif', 20, 30, 1190, 420, 200);
+
+    function start() {
+
+        if (poke.top < 420) {
+            poke.moveTopUp();
+            document.getElementById('game').innerHTML = poke.getPikachuTop();
+
+        } else if (poke.left < window.innerWidth - poke.size) {
+            poke.moveRight();
+            document.getElementById('game').innerHTML = poke.getPikachutBot();
+        } else if (poke.bottom > 20) {
+            poke.moveTopDown();
+            document.getElementById('game').innerHTML = poke.getPikachuTopUp();
+        } else if (poke.right > 30) {
+            poke.moveLeft();
+            document.getElementById('game').innerHTML = poke.getPikachuLeft();
+        }
+        // poke.top = 20;
+        // poke.left =30;
+        // poke.right = 1190;
+        // poke.right = 420;
+        setTimeout(start, 500)
+    }
+
+    start();
+
+</script>
+
+
+</body>
+</html>

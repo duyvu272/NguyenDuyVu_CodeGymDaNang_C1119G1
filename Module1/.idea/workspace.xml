@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="31f63a52-fd10-430c-b26e-7e06141dcd54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-Mang/BaiTap/FakingTextareaonTyping.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-Mang/BaiTap/FakingTextareaonTyping.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5-Mang/BaiTap/SuDungHamDungSan.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-Mang/BaiTap/SuDungHamDungSan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudy/YeuCau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy/YeuCau2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CaseStudy/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4-CauTrucLap/BaiTap/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/4-CauTrucLap/BaiTap/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-OOP/BaiTap/Mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/7-OOP-1/BaiTap/Mobile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-OOP/BaiTap/Temperature.html" beforeDir="false" afterPath="$PROJECT_DIR$/7-OOP-1/BaiTap/Temperature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-OOP/BaiTap/XayDungHinhChuNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/7-OOP-1/BaiTap/XayDungHinhChuNhat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-OOP/ThucHanh/Funny Circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/7-OOP-1/ThucHanh/Funny Circle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-OOP/ThucHanh/XayDungLopDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/7-OOP-1/ThucHanh/XayDungLopDate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7-OOP/ThucHanh/XayDungLopHinhTron.html" beforeDir="false" afterPath="$PROJECT_DIR$/7-OOP-1/ThucHanh/XayDungLopHinhTron.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaseStudy/YeuCau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy/YeuCau4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaseStudy/YeuCau5.html" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy/YeuCau5.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,29 +24,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CaseStudy/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1536">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau5.html">
+        <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/Caro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="70" column="37" lean-forward="true" selection-end-line="143" selection-end-column="7" />
+            <state relative-caret-position="131">
+              <caret line="200" column="17" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#2045#2196#0" />
+                <element signature="e#2218#2369#0" />
+                <element signature="e#6122#7178#0" />
+                <element signature="e#7234#8287#0" />
+                <element signature="e#8320#9385#0" />
+                <element signature="e#9418#10481#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau4.html">
+        <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
-              <caret line="47" column="44" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="44" />
+            <state relative-caret-position="360">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -52,6 +57,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Copy of SCSS File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,24 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3-CauTrucDieuKien/ThucHanh/SuKienChuot.html" />
-        <option value="$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/Pluzz.html" />
-        <option value="$PROJECT_DIR$/4-CauTrucLap/BaiTap/LuyenTapVongLap01.html" />
-        <option value="$PROJECT_DIR$/4-CauTrucLap/BaiTap/SoNguyenTo.html" />
-        <option value="$PROJECT_DIR$/4-CauTrucLap/BaiTap/LuyenTapVongLap02.html" />
-        <option value="$PROJECT_DIR$/5-Mang/ThucHanh/DaoNguocPhanTuTrongMang.html" />
-        <option value="$PROJECT_DIR$/5-Mang/ThucHanh/TaoThaoTacVoiMang.html" />
-        <option value="$PROJECT_DIR$/5-Mang/ThucHanh/TimGiaTriTrongMang.html" />
-        <option value="$PROJECT_DIR$/5-Mang/ThucHanh/TimGiaTriLonNhat.html" />
-        <option value="$PROJECT_DIR$/5-Mang/ThucHanh/TaoBanCaraDonGian.html" />
-        <option value="$PROJECT_DIR$/5-Mang/BaiTap/TuDien.html" />
-        <option value="$PROJECT_DIR$/5-Mang/BaiTap/Tic Tac Toe.html" />
-        <option value="$PROJECT_DIR$/5-Mang/BaiTap/FakingTextareaonTyping.html" />
-        <option value="$PROJECT_DIR$/CaseStudy/YeuCau#.html" />
-        <option value="$PROJECT_DIR$/CaseStudy/caseStudy_YeuCau1.html" />
-        <option value="$PROJECT_DIR$/CaseStudy/YeuCau2.html" />
-        <option value="$PROJECT_DIR$/6-Ham/ThucHanh/TaoHamVsGoiHam.html" />
-        <option value="$PROJECT_DIR$/6-Ham/ThucHanh/ChuyenDoiNhietDo.html" />
         <option value="$PROJECT_DIR$/6-Ham/ThucHanh/TimGiaTriNhoNhatCuaMang.html" />
         <option value="$PROJECT_DIR$/6-Ham/BaiTap/HamKiemTraSoNguyenTo.html" />
         <option value="$PROJECT_DIR$/6-Ham/BaiTap/ChuyenDoiFeetsMeter.html" />
@@ -95,12 +85,46 @@
         <option value="$PROJECT_DIR$/7-OOP/ThucHanh/XayDungLopDate.html" />
         <option value="$PROJECT_DIR$/7-OOP/BaiTap/XayDungHinhChuNhat.html" />
         <option value="$PROJECT_DIR$/7-OOP/BaiTap/Temperature.html" />
-        <option value="$PROJECT_DIR$/7-OOP/BaiTap/Mobile.html" />
-        <option value="$PROJECT_DIR$/CaseStudy/YeuCau4.html" />
         <option value="$PROJECT_DIR$/7-OOP/ThucHanh/XayDungLopHinhTron.html" />
         <option value="$PROJECT_DIR$/CaseStudy/test.html" />
         <option value="$PROJECT_DIR$/5-Mang/BaiTap/SuDungHamDungSan.html" />
+        <option value="$PROJECT_DIR$/4-CauTrucLap/BaiTap/test.html" />
+        <option value="$PROJECT_DIR$/7-OOP/BaiTap/Mobile.html" />
+        <option value="$PROJECT_DIR$/CaseStudy/YeuCau6.html" />
+        <option value="$PROJECT_DIR$/8-OOP-2/ThucHanh/BatteryVsFlashLamp.html" />
+        <option value="$PROJECT_DIR$/CaseStudy/YeuCau4.html" />
         <option value="$PROJECT_DIR$/CaseStudy/YeuCau5.html" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/GameDiChuyenDoiTuong.html" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/AdamEva.html" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/tt.html" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/Customers.js" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/Employee.js" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/run.html" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/isUpperCase..js" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/isUpperCase.js" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/KiemTraChuHoaDau.html" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/KiemtraZipcode.html" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidateMail.html" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/CongTacBongDen.html" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/run.js" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/testtttt.html" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/Tss1.html" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/ttt.html" />
+        <option value="$PROJECT_DIR$/BaiTapNgoai/Test.html" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidateAccount.html" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidatePhoneNumber.html" />
+        <option value="$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidateNameClass.html" />
+        <option value="$PROJECT_DIR$/8-OOP-2/inputCSS.js" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/InputCss.css" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/inputcss.css" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/inputcss.scss" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/input.js" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/in.scss" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/ip.css" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/input.css" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/ip.js" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/test.html" />
+        <option value="$PROJECT_DIR$/8-OOP-2/BaiTap/Caro.html" />
       </list>
     </option>
   </component>
@@ -138,35 +162,13 @@
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="5-Mang" type="462c0819:PsiDirectoryNode" />
+              <item name="8-OOP-2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="5-Mang" type="462c0819:PsiDirectoryNode" />
+              <item name="8-OOP-2" type="462c0819:PsiDirectoryNode" />
               <item name="BaiTap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="7-OOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="7-OOP" type="462c0819:PsiDirectoryNode" />
-              <item name="BaiTap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="7-OOP" type="462c0819:PsiDirectoryNode" />
-              <item name="ThucHanh" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="CaseStudy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,9 +181,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/8-OOP-2/BaiTap" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module1\8-OOP-2\BaiTap" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module1\8-OOP-2\BaiTap" />
+      <recent name="D:\CodeGym\Module1\BaiTapNgoai" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -243,18 +255,38 @@
       <workItem from="1576121958240" duration="5474000" />
       <workItem from="1576129655837" duration="7131000" />
       <workItem from="1576137016784" duration="3497000" />
-      <workItem from="1576141329988" duration="681000" />
+      <workItem from="1576141329988" duration="2942000" />
+      <workItem from="1576392646278" duration="8095000" />
+      <workItem from="1576400914385" duration="3173000" />
+      <workItem from="1576415383884" duration="13256000" />
+      <workItem from="1576458360692" duration="20647000" />
+      <workItem from="1576481470744" duration="341000" />
+      <workItem from="1576481879851" duration="7517000" />
+      <workItem from="1576490372716" duration="287000" />
+      <workItem from="1576490969331" duration="511000" />
+      <workItem from="1576502080970" duration="4718000" />
+      <workItem from="1576547188094" duration="1016000" />
+      <workItem from="1576553977177" duration="3354000" />
+      <workItem from="1576561460898" duration="2113000" />
+      <workItem from="1576564558534" duration="6623000" />
+      <workItem from="1576571901308" duration="1483000" />
+      <workItem from="1576573553408" duration="4051000" />
+      <workItem from="1576585726689" duration="25057000" />
+      <workItem from="1576637708658" duration="10381000" />
+      <workItem from="1576661567643" duration="7332000" />
+      <workItem from="1576670111889" duration="1102000" />
+      <workItem from="1576679028453" duration="6117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203222000" />
+    <option name="totallyTimeSpent" value="332657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22991072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22321428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -273,7 +305,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22991072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22321428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,132 +328,224 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/ThucHanh/SuKienChuot.html">
+    <entry file="file://$PROJECT_DIR$/5-Mang/BaiTap/FakingTextareaonTyping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/Pluzz.html">
+    <entry file="file://$PROJECT_DIR$/6-Ham/BaiTap/LuyenTapVaSuDungHam01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4-CauTrucLap/BaiTap/LuyenTapVongLap01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4-CauTrucLap/BaiTap/LuyenTapVongLap02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/ThucHanh/TimGiaTriLonNhat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4-CauTrucLap/BaiTap/SoNguyenTo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/ThucHanh/TaoBanCaraDonGian.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/ThucHanh/DaoNguocPhanTuTrongMang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/ThucHanh/TaoThaoTacVoiMang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-BienKieuDuLieuToanTu/BaiTap/BaiTap_MayTinh/baitap-Caculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="206" column="5" selection-start-line="206" selection-start-column="5" selection-end-line="206" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/ThucHanh/TimGiaTriTrongMang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/BaiTap/Tic Tac Toe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/BaiTap/TuDien.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="5074" column="4" selection-start-line="5074" selection-start-column="4" selection-end-line="5074" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6-Ham/ThucHanh/TaoHamVsGoiHam.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6-Ham/ThucHanh/TimGiaTriNhoNhatCuaMang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="1224">
+          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6-Ham/BaiTap/HamKiemTraSoNguyenTo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="192">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6-Ham/ThucHanh/ChuyenDoiNhietDo.html">
+    <entry file="file://$PROJECT_DIR$/7-OOP-1/BaiTap/Temperature.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7-OOP-1/BaiTap/XayDungHinhChuNhat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CaseStudy/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4-CauTrucLap/BaiTap/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="53" selection-start-line="20" selection-start-column="4" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/ThucHanh/BatteryVsFlashLamp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7-OOP-1/BaiTap/Mobile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="2577" column="4" selection-start-line="2577" selection-start-column="4" selection-end-line="2577" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/Employee.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/Customers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5-Mang/BaiTap/Tic Tac Toe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1043">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/Toggle Switch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1728" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/CauLenhSwitchCase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/DoYouLoveMe.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/maytinh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/AdamEva.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/ttt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/testtttt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="60" column="27" selection-end-line="79" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/CongTacBongDen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-BienKieuDuLieuToanTu/BaiTap/BaiTap_UngDungChuyenDoiTienTe/baitap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-BienKieuDuLieuToanTu/BaiTap/BaiTap_BienDuLieuToanTu/baitap1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/run.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/Tss1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="137" column="21" lean-forward="true" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-BienKieuDuLieuToanTu/BaiTap/BaiTap_MayTinh/baitap-Caculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/GameDiChuyenDoiTuong.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiTapNgoai/Test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -432,133 +556,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3-CauTrucDieuKien/BaiTap/CauLenhSwitchCase.html">
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidateMail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6-Ham/BaiTap/LuyenTapVaSuDungHam02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6-Ham/BaiTap/LuyenTapVaSuDungHam01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="170" column="9" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7-OOP/BaiTap/Temperature.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7-OOP/BaiTap/XayDungHinhChuNhat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7-OOP/ThucHanh/Funny Circle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/CaseStudy2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2663" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="215" column="25" lean-forward="true" selection-start-line="215" selection-start-column="25" selection-end-line="215" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7-OOP/BaiTap/Mobile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="291" column="37" selection-start-line="291" selection-start-column="37" selection-end-line="291" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/BaiTap/SuDungHamDungSan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7-OOP/ThucHanh/XayDungLopHinhTron.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7-OOP/ThucHanh/XayDungLopDate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5-Mang/BaiTap/FakingTextareaonTyping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="444">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="44" />
+        <state relative-caret-position="144">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau5.html">
+    <entry file="file://$PROJECT_DIR$/CaseStudy/YeuCau3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="70" column="37" lean-forward="true" selection-end-line="143" selection-end-column="7" />
+        <state relative-caret-position="-381">
+          <caret line="118" column="14" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/KiemtraZipcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/KiemTraChuHoaDau.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/ThucHanh/isUpperCase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidateNameClass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidatePhoneNumber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9 - ChuoiRegularExpression/BaiTap/ValidateAccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/inputCSS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="355" selection-start-line="355" selection-end-line="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2028">
+          <caret line="902" column="2" selection-start-line="902" selection-start-column="2" selection-end-line="902" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/in.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/ip.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/inputcss.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/input.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/ip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8-OOP-2/BaiTap/Caro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="200" column="17" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#2045#2196#0" />
+            <element signature="e#2218#2369#0" />
+            <element signature="e#6122#7178#0" />
+            <element signature="e#7234#8287#0" />
+            <element signature="e#8320#9385#0" />
+            <element signature="e#9418#10481#0" />
+          </folding>
         </state>
       </provider>
     </entry>

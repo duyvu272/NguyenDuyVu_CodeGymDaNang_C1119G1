@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let check = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    function checkEmail(string) {
+        if(check.test(string)){
+            return true
+        }
+        else
+            return false;
+    }
+
+    let emailL = "ab@gmail.";
+    console.log(checkEmail(emailL));
+
+</script>
+</body>
+</html>

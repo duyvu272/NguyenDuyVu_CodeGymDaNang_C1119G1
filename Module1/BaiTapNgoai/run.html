@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        #btn1 {
+            margin-top: 30px;
+            margin-left: 150px;
+        }
+
+        #btn2 {
+            margin-top: 30px;
+            float: right;
+            margin-right: 150px;
+        }
+
+        #img2 {
+            margin-right: 100px;
+            float: right;
+        }
+
+        #img1 {
+            margin-left: 100px;
+        }
+        #customer{
+            margin-left: 30px;
+        }
+        #salary,#name{
+            margin-top: 10px;
+        }
+        #workDay,#address{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #employee,#customer{
+            margin-left: 500px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div id="cus">
+    <img src="customer.png" height="512" width="346" id="img1"/>
+    <img src="employee.png" height="512" width="512" id="img2"/>
+    <br>
+    <button id="btn1" onclick="displayInputCustomer()">Customer</button>
+    <button id="btn2" onclick="displayInputEmployee()">Employee</button>
+
+</div>
+<div id="input">
+    <div id="customer" >
+        <input type="text" placeholder="name" id="name"><br>
+        <input type="text" placeholder="Address" id="address"><br>
+        <button id="addC" onclick="addCustomer()">add</button>
+        <input type="button" value="Show" id="showC" onclick="showCustomer()">
+    </div>
+    <div id="employee">
+        <input type="text" placeholder="Salary" id="salary"><br>
+        <input type="text" placeholder="Work Day" id="workDay"><br>
+        <button id="addE" onclick="addEmployee()">add</button>
+        <input type="button" value="Show" id="showE" onclick="showEmployee()">
+    </div>
+</div>
+
+<div class="container" id="displayCus">
+
+</div>
+<div class="container" id="displayEm">
+    <h2>Show Information </h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+        </tr>
+        <tr class="success">
+            <td>Success</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr class="danger">
+            <td>Danger</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+        <tr class="info">
+            <td>Info</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+        <tr class="warning">
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+        </tr>
+        <tr class="active">
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="Customers.js"></script>
+<script src="Employee.js"></script>
+<script src="run.js"></script>
+
+</body>
+</html>
+

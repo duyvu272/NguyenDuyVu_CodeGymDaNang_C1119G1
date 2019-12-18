@@ -56,9 +56,9 @@
         alert(displayAllInformation(i));
     }
 
-    function deleteCustomer(t, i) {
-        arrList[t].splice(i, 1);
-        alert(displayAllInformation(t));
+    function deleteCustomer(t) {
+        arrList.splice(t,1);
+        //alert(displayAllInformation(t));
     }
 
     let exit1 = true;
@@ -101,28 +101,37 @@
                                 back1 = true;
                             } else {
                                 let choice13 = prompt(displayAllInformation(parseInt(choice12)) + " Press x to Back");
-                                editCustomer(choice12, choice13);
-                                back1 = true;
+                                let cf = confirm("Do you want change " + arrList[choice12][choice13] );
+                                if(cf){
+                                    editCustomer(choice12, choice13);
+                                    back1 = false;
+                                }else
+                                back1 = false;
                             }
                         } while (!back1);
                     }
                     exit1 = false;
                     break;
                 case  4:
+
                     if (arrList.length === 0) {
                         alert("Empty");
                     } else {
-                        let back1 = false;
+                        let back12 = false;
                         do {
                             let choice123 = prompt(displayCustomerID() + "Press x to Back");
                             if (choice123 === "x") {
-                                back1 = true;
+                                back12 = true;
                             } else {
-                                let choice133 = prompt(displayAllInformation(parseInt(choice123)) + " Press x to Back");
-                                deleteCustomer(choice123, choice133);
-                                back1 = true;
+                                let confir = confirm("do you want delete customer "+arrList[choice123][0] +"?");
+                                if(confir){
+                                    deleteCustomer(choice123);
+                                    back12 = false;
+                                }else{
+                                    back12 =false;
+                                }
                             }
-                        } while (!back1);
+                        } while (!back12);
                     }
                     exit1 = false;
                     break;

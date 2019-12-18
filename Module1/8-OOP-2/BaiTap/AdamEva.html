@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Apple() {
+        this.weight = 10;
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.decrease = function () {
+            this.weight--;
+        };
+        this.isEmpy = function () {
+            if(this.weight>0)
+                return true;
+            else
+                return false;
+        };
+    }
+    function Human(name,weight,gender) {
+        this.name = name;
+        this.weight = weight;
+        this.gender = gender;
+
+        this.getName = function () {
+            return this.name;
+        };
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        };
+
+
+       this.isMale = function () {
+           if(this.gender)
+               return true;
+           else
+               return false;
+       };
+       this.setGender = function (boolean) {
+           this.gender = boolean;
+       };
+       this.checkApple = function (Apple) {
+           if(Apple.isEmpy())
+               return true;
+           else
+               return false;
+       };
+       this.eatApple = function (Apple) {
+           Apple.decrease();
+           this.weight++;
+       };
+       this.say = function () {
+           return alert("Nice");
+       }
+
+    }
+    let  eve = new Human("Eva",49,false);
+    let adam = new Human("Adam",69,true);
+    let apple1 = new Apple();
+    do{
+        eve.eatApple(apple1);
+        adam.eatApple(apple1);
+        console.log("adam : "+adam.getWeight()+"kg" + "\n"+ "eva : " + eve.getWeight()+"kg"
+        +"\nAple : "+apple1.weight+"kg");
+    }while (apple1.isEmpy());
+
+
+</script>
+</body>
+</html>

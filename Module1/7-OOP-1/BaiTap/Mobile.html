@@ -19,54 +19,54 @@
 
         this.setPluggin = function (bl) {
             this.pluggin = bl;
-        }
+        };
         this.getTxt = function () {
             return this.txt;
-        }
+        };
         this.getPluggin = function () {
             return this.pluggin;
-        }
+        };
         this.getTurnONofOff = function () {
             return this.turnOnOrOff;
-        }
+        };
         this.setTurnOnOrOff = function (bl) {
             this.turnOnOrOff = bl;
-        }
+        };
         this.getLengthMessArrived = function () {
             return this.messArivered.length;
-        }
+        };
         this.getLengthMessSent = function () {
             return this.sentMess.length;
-        }
+        };
         this.setMessSent = function (txt) {
             this.sentMess.push(txt);
-        }
+        };
         this.setTxt = function (txt) {
             this.txt = txt;
-        }
+        };
         this.getMessDraff = function () {
             return this.messDraff;
-        }
+        };
         this.setMessDraff = function (txt) {
             this.messDraff.push(txt);
-        }
+        };
         this.getLengthMessDraff = function () {
             return this.messDraff.length;
-        }
+        };
 
         this.arrivedMess = function (txt) {
             this.messArivered.push(txt);
-        }
+        };
         this.getArrivedMess = function () {
             return this.messArivered;
-        }
+        };
         this.showMess = function () {
             let str = "";
             for (let i = 0; i < this.messArivered.length; i++) {
                 str += "Messenger " + i + " : " + this.messArivered[i] + "\n";
             }
             return str;
-        }
+        };
         this.showMessSent = function () {
             let str = "";
             for (let i = 0; i < this.sentMess.length; i++) {
@@ -103,7 +103,7 @@
     let iphone = new Mobile();
     let newMess = 0;
 
-    function f() {
+    function mainMenu() {
         let check = true;
         if (nokia.mode) {
             do {
@@ -403,7 +403,7 @@
             } while (!check);
         }
     }
-    f();
+    mainMenu();
 </script>
 </body>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YeuCau6</title>
+</head>
+<body>
+<script>
+    let Customer = function () {
+        this.name = "";
+        this.email = "";
+        this.idCard = "";
+        this.birthday = "";
+        this.numberOfPeople = 0;
+        this.typeOfRoom = "";
+        this.rentDay = 0;
+        this.typeCustomer = "";
+        this.address = "";
+        this.discount = 0;
+        this.typeService = "";
+        this.listCustomers = [];
+
+        this.getName = function () {
+            return this.name;
+        };
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getEmail = function () {
+            return this.email;
+        };
+        this.setEmail = function (email) {
+            this.email = email;
+        };
+        this.getIdCard = function () {
+            return this.idCard;
+        };
+        this.setIdCard = function (idCard) {
+            this.idCard = idCard;
+        };
+        this.getBirthday = function () {
+            return this.birthday;
+        };
+        this.setBirthday = function (birthday) {
+            this.birthday = birthday;
+        };
+        this.getNumOfPeoPle = function () {
+            return this.numberOfPeople;
+        }
+        this.setNumOfPeoPle = function (numberOfPeoPle) {
+            this.numberOfPeople = numberOfPeoPle;
+        };
+        this.getTypeOfRoom = function () {
+            return this.typeOfRoom;
+        };
+        this.setTypeOfRoom = function (typeRoom) {
+            this.typeOfRoom = typeRoom;
+        };
+        this.getRentDay = function () {
+            return this.rentDay;
+        };
+        this.setRentDay = function (rentDay) {
+            this.rentDay = rentDay;
+        };
+        this.getTypeCustomer = function () {
+            return this.typeCustomer;
+        };
+        this.setTypeCustomer = function (typeCustomer) {
+            this.typeCustomer = typeCustomer;
+        };
+        this.getAddress = function () {
+            return this.address;
+        };
+        this.setAddress = function (address) {
+            this.address = address;
+        };
+        this.getDiscount = function () {
+            return this.discount;
+        };
+        this.setDiscount = function (discount) {
+            this.discount = discount;
+        };
+        this.getTypeService = function () {
+            return this.typeService;
+        };
+        this.setTypeService = function (typeService) {
+            this.typeService = typeService;
+        };
+
+        this.totalPay = function () {
+            let money = 0;
+            if (this.typeOfService === "Villa") {
+                money = 500 * this.rentDay * (1 - this.discount / 100);
+            } else if (this.typeOfService === "House") {
+                money = 300 * this.rentDay * (1 - this.discount / 100);
+            } else
+                money = 100 * this.rentDay * (1 - this.discount / 100);
+            return money;
+        };
+        this.addNewCustomer = function () {
+            cu = new Customer();
+            cu.setName(prompt("Input Name : ") +"\n");
+            cu.setIdCard(prompt("ID : ")+"\n");
+            cu.setBirthday(prompt("Day of Birth : ")+"\n");
+            cu.setEmail(prompt("Email :")+"\n");
+            cu.setAddress(prompt("Address :"));
+            cu.setDiscount(prompt("Discount : " + "\n" + "Input 0 - 100")+"\n");
+            cu.setNumOfPeoPle(prompt("Number People : ")+"\n");
+            cu.setRentDay(prompt("Rent Day : ")+"\n");
+            cu.setTypeCustomer(prompt("Type of customer : ")+"\n");
+            cu.setTypeService(prompt("Type of Service : " + " \n" + " Villa" + " \n" + " House" + " \n" + " Room")+"\n");
+            cu.setTypeOfRoom(prompt("Type of Room : " + " \n" + " Vip" + " \n" + " Business" + " \n" + " Normal")+"\n");
+            cu.totalPay();
+            this.listCustomers.push(cu);
+        };
+        this.displayCustomer = function () {
+            for (let i = 0; i < this.listCustomers.length; i++) {
+                alert(i + "." + this.listCustomers[i].getName() + " \n"
+                    + " - " + this.listCustomers[i].getIdCard() + " \n"
+                    + " - " + this.listCustomers[i].getBirthday() + " \n"
+                    + " - " + this.listCustomers[i].getEmail() + " \n"
+                    + " - " + this.listCustomers[i].getAddress() + " \n"
+                    + " - " + this.listCustomers[i].getDiscount() + " \n"
+                    + " - " + this.listCustomers[i].getNumOfPeoPle() + " \n"
+                    + " - " + this.listCustomers[i].getRentDay() + " \n"
+                    + " - " + this.listCustomers[i].getTypeService() + " \n"
+                    + " - " + this.listCustomers[i].getTypeCustomer() + " \n"
+                    + " - " + this.listCustomers[i].getTypeOfRoom() + " \n"
+                    + " - " + this.listCustomers[i].totalPay()
+                );
+            }
+        };
+    };
+    let c = new Customer();
+
+    function menu() {
+
+        let t = true;
+        do {
+            let input = prompt("Please choose option you want : "
+                + "\n1. Add new customer "
+                + "\n2. Display information customer"
+                + "\n3. Display total Pay of customer"
+                + "\n4. Edit information customer"
+                + "\n5. Delete customer"
+                + "\n6. Exit");
+            switch (input) {
+                case "1":
+                    c.addNewCustomer();
+                    t = false;
+                    break;
+                case "2":
+                    c.displayCustomer();
+                    t = false;
+                    break;
+                case "6":
+                    t = true;
+                    break;
+                default:
+                    alert("notThing");
+            }
+        } while (!t);
+    }
+
+    menu();
+</script>
+</body>
+</html>
