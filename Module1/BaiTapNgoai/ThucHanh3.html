@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai 3 : xu dung chuoi
+   // function isCheckNumber() {
+   //      let num = prompt("Input number to check :");
+   //      let number1 = num.charAt(0)+"*"+num.charAt(1)+"*"+num.charAt(2);
+   //      let number2 = num.charAt(3)+"+"+num.charAt(4)+"+"+num.charAt(5);
+   //      if(eval(number1)===eval(number2) )
+   //          return true;
+   //      else
+   //          return false;
+   //
+   //  }
+   //su dung so :
+   function isCheckNumber() {
+       let num = (prompt("Input number to check :"));
+       let b = 0;
+       let c = 1;
+       for (let i = 0; i < 6; i++) {
+           if (i < 3) {
+               b += num % 10;
+               num = parseInt(num/10);
+           } else {
+               c *= num % 10;
+               num = parseInt(num/10);
+           }
+       }
+       if (c === b)
+           return true;
+       else
+           return false;
+
+   }
+    alert(isCheckNumber());
+
+</script>
+</body>
+</html>

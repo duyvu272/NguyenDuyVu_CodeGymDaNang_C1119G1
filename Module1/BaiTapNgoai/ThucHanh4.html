@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CheckQuit() {
+        this.check = false;
+        this.getCheck = function () {
+            return this.check;
+        };
+        this.setCheck = function (boolean) {
+            this.check = boolean;
+        }
+    }
+
+    let listEmployee = [];
+
+    function Employee() {
+
+        this.getNameEm = function () {
+            return this.name;
+        };
+        this.setNameEm = function (name) {
+            this.name = name;
+        };
+        this.getAddressEm = function () {
+            return this.address;
+        };
+        this.setAddressEm = function (address) {
+            this.address = address;
+        };
+        this.getUserName = function () {
+            return this.userName;
+        };
+        this.setUserName = function (userName) {
+            this.userName = userName;
+        };
+        this.getPasswork = function () {
+            return this.passwork;
+        };
+        this.setPasswork = function (passwork) {
+            this.passwork = passwork;
+        };
+
+    }
+
+    function registerEmployee() {
+        let empl = new Employee();
+        let username = prompt("input UserName :");
+        let passwork = prompt("input Passwork : ");
+        let nameE = prompt("input your name : ");
+        let addressE = prompt("input your address :");
+        empl.setUserName(username);
+        empl.setPasswork(passwork);
+        empl.setNameEm(nameE);
+        empl.setAddressEm(addressE);
+        listEmployee.push(empl);
+    }
+
+    function login(username, passwork) {
+        let check = false;
+        for (let i = 0; i < listEmployee.length; i++) {
+            if (listEmployee[i].getUserName() === username && listEmployee[i].getPasswork() === passwork) {
+                check = true;
+                break;
+            } else
+                check = false;
+        }
+        return check;
+    }
+
+    function getPositonEm(username, passwork) {
+        let position = 0;
+        for (let i = 0; i < listEmployee.length; i++) {
+            if (listEmployee[i].getUserName() === username && listEmployee[i].getPasswork() === passwork) {
+                position = i;
+                break;
+            }
+        }
+        return position;
+    }
+
+    function displayInfomation(i) {
+        alert("Name : " + listEmployee[i].getNameEm() + "\nAddress : " + listEmployee[i].getAddressEm())
+    }
+
+    function menuMain() {
+        let checkQ = new CheckQuit();
+        checkQ.getCheck();
+        do {
+            let inp = prompt("1 .Register" + "\n2. Login" + "\n3. Exit");
+            switch (inp) {
+                case "1":
+                    registerEmployee();
+                    break;
+                case "2":
+                    let checkLogin = false;
+                    do {
+                        let username = prompt("input your user name : ");
+                        let passwork = prompt("input your passwork : ");
+                        if (login(username, passwork)) {
+                            alert("Login Successfully!!!");
+                            menuLoginSuccsess(checkQ, username, passwork);
+                            checkLogin = true;
+                        } else {
+                            alert(username + " " + passwork);
+                            alert("User Name or Passwork invalid \n Please input again.")
+                        }
+                    } while (!checkLogin);
+                    break;
+                case "3":
+                    checkQ.setCheck(true);
+                    break;
+                default :
+                    alert("number invalid");
+            }
+        } while (!checkQ.getCheck());
+
+    }
+
+    function menuLoginSuccsess(checkMainMenu, username, passwork) {
+        let check = false;
+        do {
+            let inp = prompt("1. Show Information" + "\n2. Logout." + "\n3.Exit");
+            switch (inp) {
+                case "1":
+                    displayInfomation(getPositonEm(username, passwork));
+                    break;
+                case "2":
+                    let con = confirm("Back to Main Menu");
+                    if (con)
+                        check = true;
+                    break;
+                case "3":
+                    check = true;
+                    checkMainMenu.setCheck(true);
+            }
+        } while (!check);
+    }
+
+    menuMain();
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Student(id, name, birhday, score) {
+        this.id = id;
+        this.name = name;
+        this.birthday = birhday;
+        this.avengeScore = score;
+        this.getId = function () {
+            return id;
+        };
+        this.setId = function (id) {
+            this.id = id;
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getBirthday = function () {
+            return this.birthday;
+        };
+        this.setBirthday = function (birthday) {
+            this.birthday = birthday;
+        };
+        this.getAvegaScore = function () {
+            return this.avengeScore;
+        };
+        this.setAvengaScore = function (avengeScore) {
+            this.avengeScore = avengeScore;
+        };
+
+
+        this.display = function () {
+            alert("Id : " + this.id + "\nName : " + this.name + "\nBirthday : " + this.birthday + "\nAverage Score:" + this.avengeScore);
+        };
+        this.checkRank = function () {
+            if (this.avengeScore > 8) {
+                alert("Gioi");
+            } else if (this.avengeScore >= 6.5) {
+                alert("Kha");
+            } else if (this.avengeScore >= 5)
+                alert("Trung Binh");
+            else if (this.avengeScore >= 3.5)
+                alert("Yeu")
+            else alert("Kem");
+        }
+    }
+
+    let student1 = new Student(1, "Nguyen Duy Vu", "27/02/1991", 9.9);
+    let student2 = new Student(2, "Nguyen Van A", "2/02/1995", 6);
+    // student1.display();
+    // student1.checkRank();
+    student2.display();
+    student2.checkRank();
+
+</script>
+</body>
+</html>

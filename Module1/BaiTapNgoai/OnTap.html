@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [];
+    // for(let i = 0;i<10;i++){
+    //     arr[i] = new Array(10);
+    // }
+    // for(let i= 0;i<arr.length;i++){
+    //     for(let j = 0;j<arr[i].length;j++){
+    //         arr[i][j] = Math.floor(Math.random()*100);
+    //     }
+    // }
+    // let str ="";
+    // for(let i= 0;i<arr.length;i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         str+=arr[i][j] + " ";
+    //     }
+    //     str+="\n";
+    // }
+    // document.write(str);
+    // for(let i= 0;i<arr.length;i++){
+    //     for(let j = 0;j<arr[i].length;j++){
+    //     }
+    // }
+
+    let arr = [0, -2, 2, 20, 9, 0,9,-9,6,3];
+    //let arr = [9, 3, 5, 2, 1, 2, 3, 0, 0, 5, 6, 7, 8, 9, 0, 0, 0];
+    //let arr = [1, -2, -3, 100, -90, 10, 5, 6, -2, 20, -2, 3];
+    function min() {
+        let count = 0;
+        let sum = 0;
+        let q = 0;
+        let v = 0;
+        let sum1 = arr[0] + arr[1] + arr[2];
+        for (let i = 0; q < arr.length;) {
+            sum += arr[i];
+            count++;
+            i++;
+            v++;
+            if (count >= 3) {
+                if (sum <= sum1) {
+                    sum1 = sum;
+                }
+                if (v === arr.length) {
+                    q++;
+                    i = q;
+                    count = 0;
+                    sum = 0;
+                    v = 0;
+                }
+            }
+        }
+        return sum1;
+    }
+    function findMin() {
+        let minNum = min();
+        let count = 0;
+        let sum = 0;
+        let q = 0;
+        let s1 = " ";
+        let s2 = " ";
+        let v = 0;
+        let i = 0;
+        for (; q < arr.length;) {
+            sum += arr[i];
+            count++;
+            s1 += arr[i] + " ";
+            i++;
+            v++;
+            if (count >= 3) {
+                if (sum <= minNum) {
+                    minNum = sum;
+                    s2 += s1 + "\n";
+                }
+                if (v === arr.length - 1) {
+                    q++;
+                    i = q;
+                    s1 = "";
+                    count = 0;
+                    sum = 0;
+                    v = 0;
+                }
+            }
+        }
+        return s2;
+    }
+    alert(findMin());
+</script>
+</body>
+</html>
