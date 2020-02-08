@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8a2eb80-579a-4566-a0fa-1d4c8ff020a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/BaiTap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/src/ExcuteQuadratic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/src/ExcuteTimeStamp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/src/ExuteFan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/src/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/src/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/BaiTap/src/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/ThucHanh/ThucHanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/ThucHanh/src/ExcueRetangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.Class&amp;OOP/ThucHanh/src/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/BaiTap/BaiTap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/BaiTap/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/BaiTap/src/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/BaiTap/src/Excute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/BaiTap/src/Point2And3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/BaiTap/src/Point3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/ThucHanh/ThucHanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/ThucHanh/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/ThucHanh/src/ExcuteS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/ThucHanh/src/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/ThucHanh/src/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../4.KeThua/ThucHanh/src/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/BaiTap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/colorable/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/colorable/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/colorable/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/colorable/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/colorable/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/colorable/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/comparableShape/ComparableCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/comparableShape/ComparableRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/comparableShape/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/shape/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/BaiTap/src/shape/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/ThucHanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/animal/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/animal/Chiken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/animal/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/edible/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/edible/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/edible/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/edible/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/shape/CircleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/shape/CircleComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/shape/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.AdvencedOOP/ThucHanh/src/shape/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/CaseStudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/controllers/FuncReadFileCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/controllers/FuncWriteFileCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/models/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/models/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy/src/views/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy1/CaseStudy1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1.NgonNgLapTrinhJaVa/BaiTap/out/production/BaiTap/IsPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.NgonNgLapTrinhJaVa/BaiTap/out/production/BaiTap/IsPrime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1.NgonNgLapTrinhJaVa/BaiTap/src/IsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.NgonNgLapTrinhJaVa/BaiTap/src/IsPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.MangVaPhuongThuc/BaiTap/src/SumXMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.MangVaPhuongThuc/BaiTap/src/SumXMatrix.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1W3q0ZJGIz2KEhJFY7jkkoyaET1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8a2eb80-579a-4566-a0fa-1d4c8ff020a1" name="Default Changelist" comment="" />
+      <created>1578388403623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578388403623</updated>
+      <workItem from="1578388405187" duration="236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="43" key="#Project_Structure" timestamp="1578388413780">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="43" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1578388413780" />
+    <state x="462" y="126" key="FileChooserDialogImpl" timestamp="1578388640794">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="462" y="126" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1578388640794" />
+    <state x="65" y="11" key="new project wizard" timestamp="1578388642058">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="65" y="11" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1578388642058" />
+  </component>
+</project>

@@ -13,6 +13,7 @@ public class IsPrime {
         for (int i = 2;i<100;i++){
             if(iP.isPrime(i)){
                 System.out.print(i+" ");
+
             }
         }
 
