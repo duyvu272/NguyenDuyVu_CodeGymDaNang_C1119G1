@@ -17,12 +17,5 @@ public class CaseStudyApplication {
 	}
 
 
-	@Configuration
-	static class  MyConfig extends WebMvcConfigurerAdapter {
-		@Override
-		public void addFormatters(FormatterRegistry registry) {
-			registry.addFormatter(new LocalDateFormatter());
-		}
-	}
 
 }

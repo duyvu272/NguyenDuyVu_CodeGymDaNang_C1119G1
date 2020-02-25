@@ -88,7 +88,6 @@ public class DemoController {
 
     @PostMapping("/create/save")
     public String save(Blog blog) {
-
         if (blog.getId() == null) {
             long id = (long) (Math.random() * 100);
             Date date = new Date();
