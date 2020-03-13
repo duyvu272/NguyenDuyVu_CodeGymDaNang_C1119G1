@@ -9,7 +9,7 @@ import java.util.List;
 public class TypeOfService {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTypeOfService;
 
     private String nameTypeOfService;

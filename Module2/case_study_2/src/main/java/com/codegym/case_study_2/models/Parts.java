@@ -8,7 +8,7 @@ import java.util.List;
 public class Parts {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idParts;
 
 

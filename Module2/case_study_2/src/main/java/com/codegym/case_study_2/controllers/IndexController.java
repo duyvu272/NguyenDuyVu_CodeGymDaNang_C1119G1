@@ -8,11 +8,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 
-    @GetMapping("/index")
-    public ModelAndView index(){
-        return new ModelAndView("index");
+    @GetMapping("/admin")
+    public ModelAndView dashboard(){
+      return new ModelAndView("/admin/dashboard");
 
     }
+
+
+
 
     @GetMapping("/login")
     public ModelAndView login(){
@@ -23,4 +26,7 @@ public class IndexController {
     public ModelAndView register(){
         return new ModelAndView("User/register");
     }
+
+
+
 }

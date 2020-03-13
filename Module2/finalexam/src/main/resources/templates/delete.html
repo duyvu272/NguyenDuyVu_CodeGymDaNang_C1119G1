@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<h1>EDIT BLOG</h1>
+<p>
+    <a th:href="@{/blog}">Back to Blog list</a>
+</p>
+<a th:href="/delete">delete</a>
+<a th:href="/products">Exit</a>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

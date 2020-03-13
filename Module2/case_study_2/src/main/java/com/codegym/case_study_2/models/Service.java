@@ -1,19 +1,41 @@
 package com.codegym.case_study_2.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import java.util.List;
-
+import org.hibernate.validator.constraints.Range;
 @Entity
 @Table(name = "service_f")
 public class Service {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idService;
+    @NotEmpty
     private String nameService;
+    @NotEmpty
+    @Min(1)
     private int numberOfFloor;
+    @NotEmpty
+    @Min(40)
     private double areas;
+    @NotEmpty
+    @Range(min = 1,max = 5)
     private int maxAmountPeople;
+    @NotEmpty
+    @Min(1)
     private double priceService;
+
+    @Lob
+    private String urlImg;
+
+    public String getUrlImg() {
+        return urlImg;
+    }
+
+    public void setUrlImg(String urlImg) {
+        this.urlImg = urlImg;
+    }
 
     public Long getIdService() {
         return idService;
@@ -104,7 +126,7 @@ public class Service {
     private TypeOfRent typeOfRent;
 
     public TypeOfRent getTypeOfRent() {
-        return typeOfRent;
+        return this.typeOfRent;
     }
 
     public void setTypeOfRent(TypeOfRent typeOfRent) {

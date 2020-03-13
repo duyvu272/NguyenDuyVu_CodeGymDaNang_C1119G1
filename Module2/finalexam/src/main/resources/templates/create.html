@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Create Blog</h1>
+
+<form th:action="@{/product/save}" th:object="${product}" method="post">
+    <table>
+        <tr>
+            <td>Name Product</td>
+            <td><input type="text" th:field="*{nameProduct}"/></td>
+            <td th:if="${#fields.hasErrors('nameProduct')}" th:errors="*{nameProduct}" style="color: red">Name Error</td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <select th:field="*{typeProduct}">
+                <option th:each="p : ${listType}" th:value="${p.getIdType()}"
+                        th:text="${p.getNameType()}"></option>
+            </select>
+        </tr>
+        <tr>
+            <td>Price</td>
+
+            <td><input  th:field="*{price}"/></td>
+            <td th:if="${#fields.hasErrors('nameProduct')}" th:errors="*{nameProduct}" style="color: red">Name Error</td>
+        </tr>
+        <tr>
+            <td>Amout</td>
+            <td><input  th:field="*{amount}"/></td>
+            <td th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}" style="color: red">Name Error</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea rows="4" cols="50" th:field="*{description}"/></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="Add"></td>
+            <td><a th:href="@{/products}"></a></td>
+        </tr>
+    </table>
+
+</form>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

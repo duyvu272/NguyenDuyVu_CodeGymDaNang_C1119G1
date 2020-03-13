@@ -1,0 +1,17 @@
+.navbar{
+  position: fixed;
+  width: 100%;
+  top:0;
+  background: #555555;
+  font-family: "Times New Roman";
+  font-size: 24px;
+  height: 60px;
+
+}
+a{
+text-decoration: none;
+  color: white;
+  margin: 15px;
+  padding-top:15px ;
+  display: inline-block;
+}

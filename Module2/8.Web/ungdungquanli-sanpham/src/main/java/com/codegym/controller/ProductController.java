@@ -39,5 +39,9 @@ public class ProductController {
         model.addAttribute("productE",productService.findById(id));
         return "edit";
     }
-
+    @RequestMapping("/product/{id}/delete")
+    public String delete(@PathVariable(value = "id") int id, Model model){
+        model.addAttribute("productE",productService.delete(id););
+        return "delete";
+    }
 }

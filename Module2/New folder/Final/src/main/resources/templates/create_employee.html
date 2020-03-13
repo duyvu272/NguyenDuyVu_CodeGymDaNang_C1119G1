@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout::header">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Add Employee</title>
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+                <div class="container-contact3">
+                    <div class="wrap-contact3">
+                        <form class="contact3-form validate-form" th:action="@{/employee/save}" th:object="${employee}"
+                              method="post">
+					<span class="contact3-form-title">
+					Add Employee
+					</span>
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">ID :</span>
+                                <input class="input3" type="text" name="name"
+                                       th:field="*{id}">
+                                <p th:if="${#fields.hasErrors('id')}" th:errors="*{id}" style="color: red">Name
+                                    Error</p>
+                                <span class="focus-input3"></span>
+                            </div>
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Group Employee</span>
+                                <select th:field="*{groupE}" style="margin-top: 15px;width: 100%">
+                                    <option value="system">Manage Systyem</option>
+                                    <option value="service">Manage Service</option>
+                                    <option value="room">Manager Room</option>
+                                    <option value="resources">Human Resources</option>
+                                </select>
+                            </div>
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Name Employee :</span>
+                                <input class="input3" type="text" name="name"
+                                       th:field="*{nameE}">
+                                <p th:if="${#fields.hasErrors('nameE')}" th:errors="*{nameE}" style="color: red">Name
+                                    Error</p>
+                                <span class="focus-input3"></span>
+                            </div>
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Birth Day :</span>
+                                <input class="input3" type="text" name="name"
+                                       th:field="*{birthdayE}">
+                                <p th:if="${#fields.hasErrors('birthdayE')}" th:errors="*{birthdayE}" style="color: red">Name
+                                    Error</p>
+                                <span class="focus-input3"></span>
+                            </div>
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Gender Employee</span>
+                                <select th:field="*{genderE}" style="margin-top: 15px;width: 100%">
+                                    <option  value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Phone :</span>
+                                <input class="input3" type="text" th:field="*{phoneE}" name="price">
+
+                                <span class="focus-input3"></span>
+                            </div>
+
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Id Card:</span>
+                                <input class="input3" type="text" th:field="*{iCardE}" name="amount">
+
+
+                                    <span class="focus-input3"></span>
+                            </div>
+
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Email:</span>
+                                <input class="input3" type="text" th:field="*{emailE}" name="amount">
+                                <p th:if="${#fields.hasErrors('emailE')}" th:errors="*{emailE}" style="color: red">Name
+                                    Error</p>
+
+                                    <span class="focus-input3"></span>
+                            </div>
+
+                            <div class="wrap-input3 validate-input">
+                                <span class="input3">Address :</span>
+                                <textarea class="input3" type="t" th:field="*{addressE}" name="phone"></textarea>
+
+                                <span class="focus-input3"></span>
+                            </div>
+                            <div class="container-contact3-form-btn" style="display: inline">
+                                <input type="submit" class="addNewProduct"
+                                   style="display: inherit;margin-right: 10px;width: 93px" value="ADD">
+                                <a th:href="@{/employees}" class="addNewProduct"
+                                   style="display: inherit;margin-left: 10px;text-transform: uppercase">Exit</a>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- End of Main Content -->
+
+
+        <!-- Footer -->
+        <!--                <footer th:replace="fragments/layout :: sfooter">-->
+
+        <!--                </footer>-->
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div th:replace="layout::logout">
+
+</div>
+
+
+<footer th:replace="layout::footer">
+</footer>
+
+</body>
+
+</html>

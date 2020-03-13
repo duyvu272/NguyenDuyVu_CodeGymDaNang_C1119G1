@@ -1,0 +1,56 @@
+ul.horizontal-list li {
+    display: inline-block;
+    padding: 15px;
+    align-items: center;
+}
+.vb p,.vb h4 ,.vb a, .vb h1{
+    display: inline-block;
+    padding: 2px;
+}
+
+ul.horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+
+.tableL {
+    display: table; /* Allow the centering to work */
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+p {
+    margin-bottom: 1px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}

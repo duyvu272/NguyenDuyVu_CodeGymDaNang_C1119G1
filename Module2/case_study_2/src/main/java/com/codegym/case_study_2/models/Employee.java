@@ -1,5 +1,7 @@
 package com.codegym.case_study_2.models;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -9,10 +11,11 @@ import java.util.List;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEmployee;
 
     private String nameEmployee;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthdayEm;
     private String idCardEmployee;
     private double salary;

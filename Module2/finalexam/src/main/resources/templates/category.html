@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>
+    <a th:href="@{/blog}">Back Blog list Create</a>
+</p>
+<p>
+    <a th:href="@{/create-category}">Create Category</a>
+</p>
+
+
+<div class="search-container">
+    <form>
+        <input type="text" placeholder="Search.." name="searchCate">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<h1>Category list</h1>
+<table id="blog">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th colspan="3">Option</th>
+    </tr>
+    </thead>
+    <tr th:each="row,istart : ${cate}">
+        <td th:text="${istart.index +1}"></td>
+        <td th:text="${row.getNameCategory()}"></td>
+        <td><a th:href="@{category/{id}/edit( id=${row.getId()})} ">edit</a></td>
+        <td><a th:href="@{category/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{category/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+</table>
+
+
+</form>
+<div class="pagination">
+    <a th:href="@{'/category'(page=${cate.number - 1})}" th:if="${cate.hasPrevious()}">Previous</a>
+    <span th:text="${cate.number + 1}"></span><span>/</span><span th:text="${cate.totalPages}"></span>
+    <a th:href="@{'/category'(page=${cate.number + 1})}" th:if="${cate.hasNext()}">Next</a>
+</div>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

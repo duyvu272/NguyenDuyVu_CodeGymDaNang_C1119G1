@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/baitap-bootrap.iml" filepath="$PROJECT_DIR$/baitap-bootrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thuchanh_taolayout_bootrap/thuchanh_taolayout_bootrap.iml" filepath="$PROJECT_DIR$/thuchanh_taolayout_bootrap/thuchanh_taolayout_bootrap.iml" />
+    </modules>
+  </component>
+</project>

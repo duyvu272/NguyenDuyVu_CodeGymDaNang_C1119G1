@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Furama Resort</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" th:href="@{~/../../images/favicon.ico}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" th:href="@{~/../../images/apple-touch-icon.png}"/>
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <!-- FontAwesome Icons core CSS -->
+
+    <!-- Custom styles for this template -->
+    <!-- Animate styles for this template -->
+
+    <!-- Responsive styles for this template -->
+
+    <!-- Colors for this template -->
+
+    <!-- Version Marketing CSS for this template -->
+    <link rel="stylesheet" th:href="@{~/css/category-service.css}">
+    <link rel="stylesheet" th:href="@{~/css/table.css}">
+    <link rel="stylesheet" th:href="@{~/css/version/marketing.css}">
+    <link rel="stylesheet" th:href="@{~/css/colors.css}">
+    <link rel="stylesheet" th:href="@{~/css/responsive.css}">
+    <link rel="stylesheet" th:href="@{~/css/animate.css}">
+    <link rel="stylesheet" th:href="@{~/Style.css}">
+    <link rel="stylesheet" th:href="@{~/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{~/css/bootstrap.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{~/css/util-anc.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{~/css/main-anc.css}">
+
+    <script th:src="@{https://unpkg.com/jquery@3.4.1/dist/jquery.js}" type="text/javascript"> </script>
+    <link th:href="@{https://unpkg.com/jquery@3.4.1/dist/css.css}" rel="stylesheet" type="text/css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container img {
+            vertical-align: middle;
+        }
+
+        .container .content {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0); /* Fallback color */
+            background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .example_b {
+            color: #fff !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #60a3bc;
+            padding: 20px;
+            border-radius: 50px;
+            display: inline-block;
+            border: none;
+            transition: all 0.4s ease 0s;
+        }
+
+        .example_b:hover {
+            text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            transition: all 0.4s ease 0s;
+        }
+        p{
+            color: white;
+            font-size: 20px;
+        }
+
+        body {
+
+        }
+
+    </style>
+
+</head>
+<body >
+
+<div id="wrapper">
+    <header class="market-header header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" th:href="@{/}"><img th:src="@{~/../images/version/logo_p.png}" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/category}">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketing-category.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketing-blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketing-contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="How may I help?" name="searchCate">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+    </header><!-- end market-header -->
+    <section class="section lb">
+
+        <div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+            <div class="container-contact3">
+                <div class="wrap-contact31">
+                    <form class="contact3-form validate-form" th:action="@{/addNewContactUser}" th:object="${contact1} "
+                          method="post" >
+                                <span class="contact3-form-title">
+                                Add new Contact
+                                </span>
+
+                        <div class="wrap-input3 validate-input" th:object="${service1}" >
+                            <span class="input3" >Service choose :</span>
+                            <input th:field="*{idService}" name="id-service-1" hidden>
+                            <input class="input3" type="text" name="id-service" th:field="*{nameService}" disabled>
+                            <span class="focus-input3"></span>
+                        </div>
+                        <div class="wrap-input3 validate-input" >
+                            <span class="input3">Contact Name :</span>
+                            <input class="input3" type="text" name="name" th:field="*{nameContact}">
+                            <p th:if="${#fields.hasErrors('nameContact')}" th:errors="*{nameContact}" style="color: red">Name Error</p>
+
+                            <span class="focus-input3"></span>
+                        </div>
+
+                        <div class="wrap-input3 validate-input" >
+                            <span class="input3">Start Date :</span>
+                            <input class="input3" type="text" th:field="*{startDate}" name="startDate1">
+                            <p th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}" style="color: red">Name Error</p>
+
+                            <span class="focus-input3"></span>
+                        </div>
+
+                        <div class="wrap-input3 validate-input" >
+                            <span class="input3">End Date : </span>
+                            <input class="input3" type="text"  th:field="*{endDate}"  name="endDate1">
+                            <p th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}" style="color: red">Name Error</p>
+
+                            <span class="focus-input3"></span>
+                        </div>
+
+                        <div class="wrap-input3 validate-input">
+                            <span class="input3">Down Payment : </span>
+                            <input class="input3" type="text" name="downPayment" th:field="*{downPayment} " >
+                            <p th:if="${#fields.hasErrors('downPayment')}" th:errors="*{downPayment}" style="color: red">Name Error</p>
+
+                            <span class="focus-input3"></span>
+                        </div>
+
+                        <div class="wrap-input3 validate-input">
+                            <span class="input3">Total Money :</span>
+                            <input class="input3" type="text" name="total" th:field="${service1.priceService}" disabled>
+                            <span class="focus-input3"></span>
+                        </div>
+
+                        <div class="wrap-input3 validate-input">
+                            <p class="input3">Customer :</p>
+                            <select th:field="*{customer}" class="input3">
+                                <option th:each="p : ${listCustomer}" th:value="${p.getIdCustomer()}"
+                                        th:text="${p.getNameCustomer()}"></option>
+                            </select>
+                        </div>
+                        <div class="wrap-input3 validate-input">
+                            <p class="input3" >Employee :</p>
+                            <select th:field="*{employeeId}" class="input3">
+                                <option th:each="p : ${listEmployee}" th:value="${p.getIdEmployee()}"
+                                        th:text="${p.getNameEmployee()}"></option>
+                            </select>
+                        </div>
+
+                        <div th:if="${messenger}"><input th:text="${messenger}" id="message" class="mess" value="hhh"> </input></div>
+                        <div class="container-contact3-form-btn">
+                            <button class="contact3-form-btn" >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <div class="dmtop">Scroll to Top</div>
+
+</div><!-- end wrapper -->
+
+<!-- Core JavaScript
+================================================== -->
+<script type="text/javascript" th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js}"></script>
+<script th:src="@{~/../../js/jquery.min.js}"></script>
+<script th:src="@{~/../../js/tether.min.js}"></script>
+<script th:src="@{~/../../js/bootstrap.min.js}"></script>
+<script th:src="@{~/../../js/animate.js}"></script>
+<script th:src="@{~/../../js/custom.js}"></script>
+<script type="text/javascript" th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js}"></script>
+<script>
+
+    $('#birthdaya').datepicker({
+        format: 'dd/MM/yyyy',
+        uiLibrary: 'bootstrap4',
+        autoclose: true,
+        todayHighLight:true
+    })
+</script>
+</body>
+</html>

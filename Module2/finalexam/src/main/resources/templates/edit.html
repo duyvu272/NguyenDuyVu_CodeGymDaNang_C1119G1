@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<h1>EDIT BLOG</h1>
+
+<form th:action="@{/product/save}" th:object="${product}" method="post">
+    <td><input type="hidden" th:field="*{id}"/></td>
+    <table>
+        <tr>
+            <td>Name Product</td>
+            <td><input type="text" th:field="*{nameProduct}"/></td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td>
+            <select th:field="*{typeProduct}">
+                <option th:each="p : ${listType}" th:value="${p.getIdType()}"
+                        th:text="${p.getNameType()}"></option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input  th:field="*{price}"/></td>
+        </tr>
+        <tr>
+            <td>Amout</td>
+            <td><input  th:field="*{amount}"/></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea rows="4" cols="50" th:field="*{description}"/></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="Edit"></td>
+            <td><a th:href="@{/products}" style="color: black">Exit</a></td>
+        </tr>
+    </table>
+</form>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

@@ -1,6 +1,12 @@
 package com.codegym.case_study_2.models;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import javax.validation.constraints.Future;
+import javax.validation.constraints.FutureOrPresent;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -9,16 +15,28 @@ import java.util.List;
 public class Contact {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idContact;
+    @NotEmpty(message = "Name not empty")
     private String nameContact;
+
+    @NotEmpty(message = "Start date not empty")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private LocalDate startDate;
+
+    @NotEmpty(message = "End date not empty")
+    @Future
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private LocalDate endDate;
+
+    @NotEmpty(message = "DownPayment not empty")
+    @Min(value = 1,message = "DownPayment more than 0")
     private double downPayment;
 
     public Contact() {
     }
-
+    @NotEmpty
+    @Min(1)
     private double totalMoney;
 
     @ManyToOne
@@ -92,6 +110,14 @@ public class Contact {
         return employeeId;
     }
 
+    public Customer getCustomerC() {
+        return customerC;
+    }
+
+    public void setCustomerC(Customer customerC) {
+        this.customerC = customerC;
+    }
+
     public void setEmployeeId(Employee employeeId) {
         this.employeeId = employeeId;
     }
@@ -115,5 +141,18 @@ public class Contact {
         this.customerC = customer;
     }
 
-
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "idContact=" + idContact +
+                ", nameContact='" + nameContact + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", downPayment=" + downPayment +
+                ", totalMoney=" + totalMoney +
+                ", employeeId=" + employeeId +
+                ", service=" + service +
+                ", customerC=" + customerC +
+                '}';
+    }
 }

@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1cb44;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ff4daf;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #7c53f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 25%;
+  background-color: #30f165;
+  display: inline-table;
+  padding: 5px;
+}
+
+.centercolumn {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 50%;
+  padding: 5px;
+  background-color: #e1f15b;
+  display: inline-table;
+}
+#center-head{
+  width: 100%;
+  display: inline-block;
+}
+
+#ch1{
+  width: 48%;
+  float: right;
+  background-color: #c1ffcb;
+  padding: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+#ch2{
+  width: 48%;
+  float: left;
+  background-color: #c1ffcb;
+  padding: 20px;
+  margin-top: 10px;
+}
+#center-context{
+  width: 100%;
+  display: flex;
+}
+.card1{
+  width: 30%;
+  background-color: #c1ffcb;
+  padding: 50px;
+  margin: 10px;
+  border: solid #222222;
+}
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #30f165;
+  padding: 5px;
+  display: inline-table;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #5caa27;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #c1ffcb;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#left1 {
+  height: 150px;
+  background: #5caa27;
+}
+
+#left2 {
+  height: 200px;
+  margin-top: 5px;
+  background: #333333;
+}
+
+#right1 {
+  height: 200px;
+  margin-top: 5px;
+  background: #b2952f;
+}
+
+#right2 {
+  height: 200px;
+  margin-top: 5px;
+  background: #c1977f;
+}
+
+#right3 {
+  height: 200px;
+  margin-top: 5px;
+  background: #c6de49;
+}
+
+/* Clear floats after the columns */
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #98dd6d;
+  margin-top: 20px;
+}
+
+/*!* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other *!*/
+/*@media screen and (max-width: 800px) {*/
+/*  .leftcolumn, .rightcolumn {*/
+/*    width: 100%;*/
+/*    padding: 0;*/
+/*  }*/
+/*}*/
+
+/*!* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other *!*/
+/*@media screen and (max-width: 400px) {*/
+/*  .topnav a {*/
+/*    float: none;*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/

@@ -1,6 +1,7 @@
 package com.codegym.case_study_2.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
@@ -31,7 +32,7 @@ public class TypeOfCustomer {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTypeOfCustomer;
 
     public TypeOfCustomer() {

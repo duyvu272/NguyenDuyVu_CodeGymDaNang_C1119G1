@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout::header">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Add Product</title>
+
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column" style="padding-bottom: 20px;">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <form th:object="${product}" >
+                <p>Do you want delete </p><input th:field="*{name}" style="color: black" disabled>
+                <br><br>
+                <div class="container-contact3-form-btn" style="display: inline;">
+                    <a th:href="@{/product/{id}(id=*{getId()})}" class="addNewProduct"
+                       style="display: inherit;margin-right: 10px;text-transform: uppercase;height: 51px">Delete</a>
+                    <a th:href="@{/products}" class="addNewProduct"
+                       style="display: inherit;margin-left: 25px;text-transform: uppercase">Exit</a>
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div th:replace="layout::logout">
+
+</div>
+
+
+<footer th:replace="layout::footer">
+</footer>
+
+</body>
+
+</html>

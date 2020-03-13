@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Site Metas -->
+    <title>Furama Resort</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Site Metas -->
-<title>Furama Resort</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" th:href="@{~/images/favicon.ico}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" th:href="@{~/images/apple-touch-icon.png}"/>
 
-<!-- Site Icons -->
-<link rel="shortcut icon" th:href="@{images/favicon.ico}" type="image/x-icon"/>
-<link rel="apple-touch-icon" th:href="@{images/apple-touch-icon.png}"/>
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 
-<!-- Design fonts -->
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{~/css/bootstrap.css}" rel="stylesheet">
 
-<!-- Bootstrap core CSS -->
-<link th:href="@{css/bootstrap.css}" rel="stylesheet">
+    <!-- FontAwesome Icons core CSS -->
+    <link th:href="@{~/css/font-awesome.min.css}" rel="stylesheet">
 
-<!-- FontAwesome Icons core CSS -->
-<link th:href="@{css/font-awesome.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link th:href="@{~/style.css}" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<link th:href="@{style.css}" rel="stylesheet">
+    <!-- Animate styles for this template -->
+    <link th:href="@{~/css/animate.css}" rel="stylesheet">
 
-<!-- Animate styles for this template -->
-<link th:href="@{css/animate.css}" rel="stylesheet">
+    <!-- Responsive styles for this template -->
+    <link th:href="@{~/css/responsive.css}" rel="stylesheet">
 
-<!-- Responsive styles for this template -->
-<link th:href="@{css/responsive.css}" rel="stylesheet">
+    <!-- Colors for this template -->
+    <link th:href="@{~/css/colors.css}" rel="stylesheet">
 
-<!-- Colors for this template -->
-<link th:href="@{css/colors.css}" rel="stylesheet">
-
-<!-- Version Marketing CSS for this template -->
-<link th:href="@{css/version/marketing.css}" rel="stylesheet">
-
+    <!-- Version Marketing CSS for this template -->
+    <link th:href="@{~/css/version/marketing.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{~/css/category-service.css}">
+    <link rel="stylesheet" th:href="@{~/css/table.css}">
 
 </head>
 <body>
@@ -55,14 +56,14 @@
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" th:href="@{/index}"><img th:src="@{images/version/logo_p.png}" alt=""></a>
+                <a class="navbar-brand" th:href="@{/}"><img th:src="@{images/version/logo_p.png}" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/index}">Home</a>
+                            <a class="nav-link" th:href="@{/}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="marketing-category.html">Category</a>
+                            <a class="nav-link" th:href="@{/category}">Category</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="marketing-category.html">News</a>
@@ -75,7 +76,7 @@
                         </li>
                     </ul>
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="How may I help?">
+                        <input class="form-control mr-sm-2" type="text" placeholder="How may I help?" name="searchCate">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
@@ -94,7 +95,7 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="newsletter-widget text-center align-self-center" hidden>
                         <h3>Register</h3>
-                        <form class="form-inline" th:action="@{/add_customer}" method="post" >
+                        <form class="form-inline" th:action="@{/add_customer}" method="post">
                             <input type="text" name="email" placeholder="Input your name" required
                                    class="form-control"/>
                             <input type="text" name="email" placeholder="Input your username" required
@@ -118,11 +119,16 @@
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-wrapper">
-                        <div class="blog-custom-build">
+
+
+                        <!---bat dau for-->
+                        <div class="blog-custom-build" th:each="row:${listServiceCate}">
+
+
                             <div class="blog-box wow fadeIn">
                                 <div class="post-media">
-                                    <a href="marketing-single.html" title="">
-                                        <img src="upload/villa1.jpg" alt="" class="img-fluid">
+                                    <a th:href="@{/serviceDetail/{id}(id=${row.getIdService()})}" title="">
+                                        <img th:src="*{row.getUrlImg()}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -133,160 +139,40 @@
                                 <div class="blog-meta big-meta text-center">
                                     <div class="post-sharing">
                                         <ul class="list-inline">
-                                            <li><a href="#" class="fb-button btn btn-primary"><i
-                                                    class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a>
+                                            <li><a th:href="@{/user-create-contact/{id}(id=${row.getIdService()})}" class="fb-button btn btn-primary" th:data-id="${row.getIdService()}">
+                                                <span class="down-mobile">Book now</span></a>
                                             </li>
-                                            <li><a href="#" class="tw-button btn btn-primary"><i
-                                                    class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a>
-                                            </li>
-                                            <li><a href="#" class="gp-button btn btn-primary"><i
-                                                    class="fa fa-google-plus"></i></a></li>
                                         </ul>
                                     </div><!-- end post-sharing -->
-                                    <h4><a href="marketing-single.html" title="">You can learn how to make money with
-                                        your blog and videos</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et
-                                        pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enimcerat
-                                        elicerat eli nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    <small><a href="marketing-category.html" title="">Make Money</a></small>
-                                    <small><a href="marketing-single.html" title="">24 July, 2017</a></small>
-                                    <small><a href="#" title="">by Jack</a></small>
-                                    <small><a href="#" title=""><i class="fa fa-eye"></i> 2291</a></small>
-                                </div><!-- end meta -->
-                            </div><!-- end blog-box -->
-
-                            <hr class="invis">
-
-                            <div class="blog-box wow fadeIn">
-                                <div class="post-media">
-                                    <a href="marketing-single.html" title="">
-                                        <img src="upload/villa2.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta big-meta text-center">
-                                    <div class="post-sharing">
-                                        <ul class="list-inline">
-                                            <li><a href="#" class="fb-button btn btn-primary"><i
-                                                    class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a>
-                                            </li>
-                                            <li><a href="#" class="tw-button btn btn-primary"><i
-                                                    class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a>
-                                            </li>
-                                            <li><a href="#" class="gp-button btn btn-primary"><i
-                                                    class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div><!-- end post-sharing -->
-                                    <h4><a href="marketing-single.html" title="">The way to reach hundreds of thousands
-                                        of customers is through the SEO</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et
-                                        pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enimcerat
-                                        elicerat eli nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    <small><a href="marketing-category.html" title="">Marketing</a></small>
-                                    <small><a href="marketing-single.html" title="">21 July, 2017</a></small>
-                                    <small><a href="#" title="">by Jack</a></small>
-                                    <small><a href="#" title=""><i class="fa fa-eye"></i> 666</a></small>
-                                </div><!-- end meta -->
-                            </div><!-- end blog-box -->
-
-                            <hr class="invis">
-
-                            <div class="blog-box wow fadeIn">
-                                <div class="post-media">
-                                    <a href="marketing-single.html" title="">
-                                        <img src="upload/villa3.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta big-meta text-center">
-                                    <div class="post-sharing">
-                                        <ul class="list-inline">
-                                            <li><a href="#" class="fb-button btn btn-primary"><i
-                                                    class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a>
-                                            </li>
-                                            <li><a href="#" class="tw-button btn btn-primary"><i
-                                                    class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a>
-                                            </li>
-                                            <li><a href="#" class="gp-button btn btn-primary"><i
-                                                    class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div><!-- end post-sharing -->
-                                    <h4><a href="marketing-single.html" title="">Ways to reach the world through mobile
-                                        phones</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et
-                                        pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enimcerat
-                                        elicerat eli nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    <small><a href="marketing-category.html" title="">Technology</a></small>
-                                    <small><a href="marketing-single.html" title="">20 July, 2017</a></small>
-                                    <small><a href="#" title="">by Martin</a></small>
-                                    <small><a href="#" title=""><i class="fa fa-eye"></i> 441</a></small>
-                                </div><!-- end meta -->
-                            </div><!-- end blog-box -->
-
-                            <hr class="invis">
-
-                            <div class="blog-box wow fadeIn">
-                                <div class="post-media">
-                                    <a href="marketing-single.html" title="">
-                                        <img src="upload/villa4.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta big-meta text-center">
-                                    <div class="post-sharing">
-                                        <ul class="list-inline">
-                                            <li><a href="#" class="fb-button btn btn-primary"><i
-                                                    class="fa fa-facebook"></i> <span class="down-mobile">Share on Facebook</span></a>
-                                            </li>
-                                            <li><a href="#" class="tw-button btn btn-primary"><i
-                                                    class="fa fa-twitter"></i> <span class="down-mobile">Tweet on Twitter</span></a>
-                                            </li>
-                                            <li><a href="#" class="gp-button btn btn-primary"><i
-                                                    class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div><!-- end post-sharing -->
-                                    <h4><a href="marketing-single.html" title="">Would you like to work as a freelancer
-                                        for lifetime?</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et
-                                        pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enimcerat
-                                        elicerat eli nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                    <small><a href="marketing-category.html" title="">Technology</a></small>
-                                    <small><a href="marketing-single.html" title="">20 July, 2017</a></small>
-                                    <small><a href="#" title="">by Martin</a></small>
-                                    <small><a href="#" title=""><i class="fa fa-eye"></i> 8934</a></small>
+                                    <div class="vb"><h4><a th:href="@{/serviceDetail/{id}(id=${row.getIdService()})}" title="">Hot Villa 5 Star Only <h4 th:text="${row.getPriceService()}"></h4>$</a></h4></div>
+                                    <div class="vb"><p>Price : <p th:text="${row.getPriceService()}"></p>$ for 1 week.</p></div>
+                                    <small><a th:href="@{/category}" title="">Villa</a></small>
+                                    <small><a th:href="@{/category}" title="">24 July, 2017</a></small>
+                                    <small><a href="#" title="">by Vu</a></small>
+                                    <small><a th:href="@{/favor/{id}(id=${row.getIdService()})}" title=""><img th:src="@{upload/like.jpg}" style="width:50px ;vertical-align: middle" class="img-fluid">
+                                        </a></small>
                                 </div><!-- end meta -->
                             </div><!-- end blog-box -->
                             <hr class="invis">
+
                         </div>
+
                     </div>
 
                     <hr class="invis">
 
                     <div class="row">
-                        <div class="col-md-12">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div><!-- end col -->
+
+                        <div class="pagination">
+                            <a th:href="@{'/'(page=${listServiceCate.number - 1},name=${nameService})}"
+                               th:if="${listServiceCate.hasPrevious()}">Previous</a>
+                            <span th:text="${listServiceCate.number + 1}"></span><span>/</span><span
+                                th:text="${listServiceCate.totalPages}"></span>
+                            <a th:href="@{'/'(page=${listServiceCate.number + 1},name=${nameService})}"
+                               th:if="${listServiceCate.hasNext()}">Next</a>
+                        </div>
+
+
                     </div><!-- end row -->
                 </div><!-- end col -->
 
@@ -299,7 +185,7 @@
                                     <a href="marketing-single.html"
                                        class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="w-100 justify-content-between">
-                                            <img src="upload/small_07.jpg" alt="" class="img-fluid float-left">
+                                            <img src="upload/vl1.jpg" alt="" class="img-fluid float-left">
                                             <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
                                             <small>12 Jan, 2016</small>
                                         </div>
@@ -308,7 +194,7 @@
                                     <a href="marketing-single.html"
                                        class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="w-100 justify-content-between">
-                                            <img src="upload/small_08.jpg" alt="" class="img-fluid float-left">
+                                            <img src="upload/vl2.jpg" alt="" class="img-fluid float-left">
                                             <h5 class="mb-1">Let's make an introduction for creative life</h5>
                                             <small>11 Jan, 2016</small>
                                         </div>
@@ -317,7 +203,7 @@
                                     <a href="marketing-single.html"
                                        class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="w-100 last-item justify-content-between">
-                                            <img src="upload/small_09.jpg" alt="" class="img-fluid float-left">
+                                            <img src="upload/vl3.jpg" alt="" class="img-fluid float-left">
                                             <h5 class="mb-1">Did you see the most beautiful sea in the world?</h5>
                                             <small>07 Jan, 2016</small>
                                         </div>
@@ -330,7 +216,7 @@
                             <h2 class="widget-title">Advertising</h2>
                             <div class="banner-spot clearfix">
                                 <div class="banner-img">
-                                    <img src="upload/banner_03.jpg" alt="" class="img-fluid">
+                                    <img src="upload/vl5.jpg" alt="" class="img-fluid">
                                 </div><!-- end banner-img -->
                             </div><!-- end banner -->
                         </div><!-- end widget -->
@@ -338,32 +224,12 @@
                         <div class="widget">
                             <h2 class="widget-title">Instagram Feed</h2>
                             <div class="instagram-wrapper clearfix">
-                                <a class="" href="#"><img src="upload/small_09.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_01.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_02.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_03.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_04.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_05.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_06.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_07.jpg" alt="" class="img-fluid"></a>
-                                <a href="#"><img src="upload/small_08.jpg" alt="" class="img-fluid"></a>
+                                <a class="" href="#"><img src="upload/vl1.jpg" alt="" class="img-fluid"></a>
+                                <a href="#"><img src="upload/villa1.jpg" alt="" class="img-fluid"></a>
+                                <a href="#"><img src="upload/vl2.jpg" alt="" class="img-fluid"></a>
                             </div><!-- end Instagram wrapper -->
                         </div><!-- end widget -->
 
-                        <div class="widget">
-                            <h2 class="widget-title">Popular Categories</h2>
-                            <div class="link-widget">
-                                <ul>
-                                    <li><a href="#">Marketing <span>(21)</span></a></li>
-                                    <li><a href="#">SEO Service <span>(15)</span></a></li>
-                                    <li><a href="#">Digital Agency <span>(31)</span></a></li>
-                                    <li><a href="#">Make Money <span>(22)</span></a></li>
-                                    <li><a href="#">Blogging <span>(66)</span></a></li>
-                                    <li><a href="#">Entertaintment <span>(11)</span></a></li>
-                                    <li><a href="#">Video Tuts <span>(87)</span></a></li>
-                                </ul>
-                            </div><!-- end link-widget -->
-                        </div><!-- end widget -->
                     </div><!-- end sidebar -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -381,7 +247,7 @@
                                 <a href="marketing-single.html"
                                    class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 justify-content-between">
-                                        <img src="upload/small_04.jpg" alt="" class="img-fluid float-left">
+                                        <img src="upload/vl1.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
                                         <small>12 Jan, 2016</small>
                                     </div>
@@ -390,7 +256,7 @@
                                 <a href="marketing-single.html"
                                    class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 justify-content-between">
-                                        <img src="upload/small_05.jpg" alt="" class="img-fluid float-left">
+                                        <img src="upload/vl3.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">Let's make an introduction for creative life</h5>
                                         <small>11 Jan, 2016</small>
                                     </div>
@@ -399,7 +265,7 @@
                                 <a href="marketing-single.html"
                                    class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 last-item justify-content-between">
-                                        <img src="upload/small_06.jpg" alt="" class="img-fluid float-left">
+                                        <img src="upload/vl5.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">Did you see the most beautiful sea in the world?</h5>
                                         <small>07 Jan, 2016</small>
                                     </div>
@@ -417,7 +283,7 @@
                                 <a href="marketing-single.html"
                                    class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 justify-content-between">
-                                        <img src="upload/small_01.jpg" alt="" class="img-fluid float-left">
+                                        <img src="upload/villa2.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">Banana-chip chocolate cake recipe with customs</h5>
                                         <span class="rating">
                                                 <i class="fa fa-star"></i>
@@ -432,7 +298,7 @@
                                 <a href="marketing-single.html"
                                    class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 justify-content-between">
-                                        <img src="upload/small_02.jpg" alt="" class="img-fluid float-left">
+                                        <img src="upload/villa1.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">10 practical ways to choose organic vegetables</h5>
                                         <span class="rating">
                                                 <i class="fa fa-star"></i>
@@ -447,7 +313,7 @@
                                 <a href="marketing-single.html"
                                    class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="w-100 last-item justify-content-between">
-                                        <img src="upload/small_03.jpg" alt="" class="img-fluid float-left">
+                                        <img src="upload/vl1.jpg" alt="" class="img-fluid float-left">
                                         <h5 class="mb-1">We are making homemade ravioli, nice and good</h5>
                                         <span class="rating">
                                                 <i class="fa fa-star"></i>
@@ -463,29 +329,13 @@
                     </div><!-- end widget -->
                 </div><!-- end col -->
 
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                    <div class="widget">
-                        <h2 class="widget-title">Popular Categories</h2>
-                        <div class="link-widget">
-                            <ul>
-                                <li><a href="#">Marketing <span>(21)</span></a></li>
-                                <li><a href="#">SEO Service <span>(15)</span></a></li>
-                                <li><a href="#">Digital Agency <span>(31)</span></a></li>
-                                <li><a href="#">Make Money <span>(22)</span></a></li>
-                                <li><a href="#">Blogging <span>(66)</span></a></li>
-                                <li><a href="#">Entertaintment <span>(11)</span></a></li>
-                                <li><a href="#">Video Tuts <span>(87)</span></a></li>
-                            </ul>
-                        </div><!-- end link-widget -->
-                    </div><!-- end widget -->
-                </div><!-- end col -->
             </div><!-- end row -->
 
             <div class="row">
                 <div class="col-md-12 text-center">
                     <br>
                     <br>
-                    <div class="copyright">&copy; Markedia. Design: <a href="http://html.design">HTML Design</a>.</div>
+                    <div class="copyright">&copy; Case Study <a href="http://html.design">Furama Resort</a>.</div>
                 </div>
             </div>
         </div><!-- end container -->
@@ -497,11 +347,11 @@
 
 <!-- Core JavaScript
 ================================================== -->
-<script src="js/jquery.min.js"></script>
-<script src="js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/animate.js"></script>
-<script src="js/custom.js"></script>
+<script th:src="@{~/js/jquery.min.js}"></script>
+<script th:src="@{~/js/tether.min.js}"></script>
+<script th:src="@{~/js/bootstrap.min.js}"></script>
+<script th:src="@{~/js/animate.js}"></script>
+<script th:src="@{~/js/custom.js}"></script>
 
 </body>
 </html>

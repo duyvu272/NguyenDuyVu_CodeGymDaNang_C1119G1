@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Furama Resort</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" th:href="@{~/../../images/favicon.ico}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" th:href="@{~/../../images/apple-touch-icon.png}"/>
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <!-- FontAwesome Icons core CSS -->
+
+    <!-- Custom styles for this template -->
+    <!-- Animate styles for this template -->
+
+    <!-- Responsive styles for this template -->
+
+    <!-- Colors for this template -->
+
+    <!-- Version Marketing CSS for this template -->
+    <link rel="stylesheet" th:href="@{~/css/category-service.css}">
+    <link rel="stylesheet" th:href="@{~/css/table.css}">
+    <link rel="stylesheet" th:href="@{~/css/version/marketing.css}">
+    <link rel="stylesheet" th:href="@{~/css/colors.css}">
+    <link rel="stylesheet" th:href="@{~/css/responsive.css}">
+    <link rel="stylesheet" th:href="@{~/css/animate.css}">
+    <link rel="stylesheet" th:href="@{~/Style.css}">
+    <link rel="stylesheet" th:href="@{~/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{~/css/bootstrap.css}">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container img {
+            vertical-align: middle;
+        }
+
+        .container .content {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0); /* Fallback color */
+            background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .example_b {
+            color: #fff !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #60a3bc;
+            padding: 20px;
+            border-radius: 50px;
+            display: inline-block;
+            border: none;
+            transition: all 0.4s ease 0s;
+        }
+
+        .example_b:hover {
+            text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            transition: all 0.4s ease 0s;
+        }
+        p{
+            color: white;
+            font-size: 20px;
+        }
+
+        body {
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <header class="market-header header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" th:href="@{/}"><img th:src="@{~/../images/version/logo_p.png}" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/category}">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketing-category.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketing-blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketing-contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="How may I help?" name="searchCate">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div><!-- end container-fluid -->
+    </header><!-- end market-header -->
+    <section class="section lbl">
+
+        <div class="container" th:object="${serviceDetail}">
+            <img th:src="*{getUrlImg()}" alt="Villa" style="width:100%;">
+            <div class="content">
+                <div class="vb"><h1 th:text="*{getNameService()}"></h1>
+                    <h1>- Only </h1><h1 th:text="*{getPriceService()}"></h1><h1>$</h1>
+                </div>
+                <div class="vb"> Areas :<p th:text="*{getAreas()}"></p>meter - Max people :<p
+                        th:text="*{getMaxAmountPeople()}"></p>p-Stay in <p th:text="*{getTypeOfRent().getNameTypeOfRent()}"></p></div>
+                <p>You could be here sooner and save up to 50% off stays in March and April with our "Website Exclusive' offer!</p>
+
+                <div class="button_cont" align="center" >
+                    <a class="example_b" th:href="@{/user-create-contact/{id}(id=*{getIdService()})}" >Book Now</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div class="dmtop">Scroll to Top</div>
+
+</div><!-- end wrapper -->
+
+<!-- Core JavaScript
+================================================== -->
+<script th:src="@{~/../../js/jquery.min.js}"></script>
+<script th:src="@{~/../../js/tether.min.js}"></script>
+<script th:src="@{~/../../js/bootstrap.min.js}"></script>
+<script th:src="@{~/../../js/animate.js}"></script>
+<script th:src="@{~/../../js/custom.js}"></script>
+
+</body>
+</html>

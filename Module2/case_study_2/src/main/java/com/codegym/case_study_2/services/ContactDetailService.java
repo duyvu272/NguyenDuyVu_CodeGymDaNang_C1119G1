@@ -14,6 +14,5 @@ public interface ContactDetailService {
     void save(ContactDetails details);
     ContactDetails findByIdL(Long id);
     Page<ContactDetails> findAll(Pageable pageable);
-    Page<ContactDetails> findByName(String name, Pageable pageable);
 
 }

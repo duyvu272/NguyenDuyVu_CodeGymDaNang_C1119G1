@@ -8,7 +8,7 @@ import java.util.List;
 public class TypeOfRent {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTypeOfRent;
 
     private String nameTypeOfRent;
@@ -29,7 +29,7 @@ public class TypeOfRent {
     }
 
     public String getNameTypeOfRent() {
-        return nameTypeOfRent;
+        return this.nameTypeOfRent;
     }
 
     public void setNameTypeOfRent(String nameTypeOfRent) {
