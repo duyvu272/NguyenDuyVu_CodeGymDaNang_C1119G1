@@ -1,0 +1,80 @@
+.con {
+    padding-right: 1px;
+    padding-left: 1px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row-full{
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 2000px;
+    }
+}
+#logo{
+    margin-left: 50px;
+    width: 100px;
+    height: 25px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+.im{
+    height: 30px;
+    width: 30px;
+}
+.fa, .fas {
+    margin-left: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.va{
+    margin-left: 100px;
+}
+.link{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 40px;
+}
+.fab{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.slide1{
+
+    height: 150px;
+    border: 1px solid black;
+}
+.u1{
+    margin-left: 30px;
+    width: 150px;
+    height: 125px;
+}
+
+.sl1{
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+}
+#carouselExampleIndicators{
+    margin-top: 10px;
+}
+.buynow{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.m1{
+    width: 100%;
+}
+
+.x1{
+    margin: 5px;
+    padding:1px;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQueryUi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Jquery.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/Jquery.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="container container-full">
+
+
+    <div class="row">
+        <div class="col-sm ">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.motor1.com/images/mgl/M1318/s1/lamborghini-lead-image.jpg"
+                             class="d-block img" alt="lambo1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.telegraph.co.uk/content/dam/news/2017/11/11/Lam1_trans%2B%2BnAdySV0BR-4fDN_-_p756cVfcy8zLGPV4EhRkjQy7tg.jpg"
+                             class="d-block img" alt="bo2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://giaxeoto.vn/admin/webroot/img/upload2/gia-xe-Lamborghini-Aventador-SVJ.jpg"
+                             class="d-block img" alt="b1">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm" style="background-color:#7dbaff;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">JQUERY <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lib</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Example</a>
+                                <a class="dropdown-item" href="#">Test</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 sidebar2">
+            <ul class="nav flex-column ">
+                <li class="nav-item nav22">
+                    <a class="nav-link active" href="#">Widgets</a>
+                </li>
+                <li class="nav-item nav22">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item nav22">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item nav22">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item nav22">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item nav22">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-sm-10 context1">
+            <div class="row">
+                <div class="col-sm-6 contain">
+                    <h4>Draggable</h4>
+                        <p>Allow elements to be moved using the mouse.</p>
+                    <div id="draggable" class="ui-widget-content">
+                        <p>Drag me around</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Droppable</h4>
+                    <p>Create targets for draggable elements.</p>
+                    <div id="draggable1" class="ui-widget-content">
+                        <p>Drag me to my target</p>
+                    </div>
+
+                    <div id="droppable" class="ui-widget-header">
+                        <p>Drop here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 contain">
+                    <h4>Resizable</h4>
+                    <p>Change the size of an element using the mouse.</p>
+                    <div id="resizable" class="ui-widget-content">
+                        <h3 class="ui-widget-header">Resizable</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Selectable</h4>
+                    <p>Use the mouse to select elements, individually or in a group.</p>
+                    <ol id="selectable">
+                        <li class="ui-widget-content">Item 1</li>
+                        <li class="ui-widget-content">Item 2</li>
+                        <li class="ui-widget-content">Item 3</li>
+                        <li class="ui-widget-content">Item 4</li>
+                        <li class="ui-widget-content">Item 5</li>
+                        <li class="ui-widget-content">Item 6</li>
+                        <li class="ui-widget-content">Item 7</li>
+                    </ol>
+
+                </div>
+            </div>
+            <div class="row ccc">
+                <div class="col-sm-6 contain">
+                    <h4>Sortable</h4>
+                    <p>Reorder elements in a list or grid using the mouse..</p>
+
+                    <ul id="sortable">
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Accordion</h4>
+                    <p>Displays collapsible content panels for presenting information in a limited amount of space.</p>
+
+                    <div id="accordion">
+                        <h3>Section 1</h3>
+                        <div class="accoi">
+                            <p>
+                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            </p>
+                        </div>
+                        <h3>Section 2</h3>
+                        <div class="accoi">
+                            <p>
+                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            </p>
+                        </div>
+                        <h3>Section 3</h3>
+                        <div class="accoi">
+                            <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            </p>
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3>Section 4</h3>
+                        <div class="accoi">
+                            <p>
+                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            </p>
+                            <p>
+                                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 contain">
+                    <h4>Autocomplete</h4>
+                    <p>Enables users to quickly find and select from a pre-populated list of values as they type, leveraging searching and filtering.</p>
+                    <div class="ui-widget">
+                        <label for="tags">Tags: </label>
+                        <input id="tags">
+                    </div>
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Datepicker</h4>
+                    <p>Select a date from a popup or inline calendar</p>
+
+                    <p>Date: <input type="text" id="datepicker"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 contain">
+                    <h4>Dialog</h4>
+                    <p>Open content in an interactive overlay.</p>
+                    <div id="dialog1" title="Basic dialog">
+                        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Slider</h4>
+                    <p>Drag a handle to select a numeric value.</p>
+                    <div id="slider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 contain">
+                    <h4>Progressbar</h4>
+                    <p>Display status of a determinate or indeterminate process..</p>
+                    <div id="progressbar"></div>
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Spinner</h4>
+                    <p>Enhance a text input for entering numeric values, with up/down buttons and arrow key handling.</p>
+                    <p>
+                        <label for="spinner">Select a value:</label>
+                        <input id="spinner" name="value">
+                    </p>
+
+                    <p>
+                        <button id="disable">Toggle disable/enable</button>
+                        <button id="destroy">Toggle widget</button>
+                    </p>
+
+                    <p>
+                        <button id="getvalue">Get value</button>
+                        <button id="setvalue">Set value to 5</button>
+                    </p>
+
+                </div>
+            </div>
+            <div class="row rrrr">
+                <div class="col-sm-6 contain">
+                    <h4>Tabs</h4>
+                    <p>A single content area with multiple panels, each associated with a header in a list.</p>
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                            <li><a href="#tabs-2">Proin dolor</a></li>
+                            <li><a href="#tabs-3">Aenean lacinia</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                        </div>
+                        <div id="tabs-2">
+                            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                        </div>
+                        <div id="tabs-3">
+                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 contain">
+                    <h4>Add Class</h4>
+                    <p>Adds class(es) to elements while animating all style changes.</p>
+                    <div class="toggler">
+                        <div id="effect" class="ui-corner-all">
+                            Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+                        </div>
+                    </div>
+
+                    <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 contain">
+
+                </div>
+                <div class="col-sm-6 contain">
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"-->
+<!--        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
