@@ -8,7 +8,6 @@
     <meta name="description" content="Colorlib Templates">
     <meta name="author" content="Colorlib">
     <meta name="keywords" content="Colorlib Templates">
-
     <!-- Title Page-->
     <title>Au Register Forms by Colorlib</title>
 
@@ -16,68 +15,308 @@
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
 
     <!-- Vendor CSS-->
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
 </head>
 
 <body>
-    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w780">
-            <div class="card card-3">
-                <div class="card-heading"></div>
-                <div class="card-body">
-                    <h2 class="title">Registration Info</h2>
-                    <form method="POST">
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w780">
+        <div class="card card-3">
+            <div class="card-heading">
+                <h2 class="title t1">General Infomation</h2>
+
+                <form method="POST" class="form1">
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Title" name="title" id="title">
+                    </div>
+                    <div class=" row">
+                        <div class="col-sm input-group">
+                            <input class="input--style-3" type="text" placeholder="First Name" name="first-name"
+                                   id="fname">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        <div class="col-sm input-group" style="margin-left: 30px">
+                            <input class="input--style-3" type="text" placeholder="Last Name" name="last-name"
+                                   id="lname">
                         </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="gender" id="positon1">
+                                <option disabled="disabled" selected="selected">Position</option>
+                                <option>CIO</option>
+                                <option>CEO</option>
+                                <option>Manager</option>
+                                <option>Employee</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Company" name="company"
+                               id="company-id">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm input-group ">
+                            <input class="input--style-3" type="text" placeholder="Business Area" name="area"
+                                   id="area">
+                        </div>
+                        <div class="col-sm " style="margin-left: 20px">
+                            <div class="rs-select2 js-select-simple select--no-search input-group input-group">
+                                <select name="employee" id="employee-id">
+                                    <option disabled="disabled" selected="selected">Employee</option>
+                                    <option>IT</option>
+                                    <option>Accounting</option>
+                                    <option>Help Desk</option>
                                     <option>Other</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+                    </div>
+                    <button class="btn btn--pill btn--green up" id="button" type="button">
+                        Show Data
+                    </button>
+                    <button class="btn btn--pill btn--green up" id="button1" type="button">
+                        Hide
+                    </button>
+                    <div id="div1" style="margin-top: 10px;color: white;width: 600px"></div>
+                </form>
+
+            </div>
+
+
+            <div class="card-body">
+                <h2 class="title">Contact Detail</h2>
+
+                <form method="POST">
+
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Street + Nr" name="name">
+                    </div>
+
+                    <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Addition Information" name="name">
+                    </div>
+
+                    <div class=" row">
+                        <div class="col-sm input-group">
+                            <input class="input--style-3" type="text" placeholder="Zip Code" name="title">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                        <div class="col-sm input-group" style="margin-left: 20px">
+                            <input class="input--style-3" type="text" placeholder="Place" name="title">
                         </div>
-                        <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                    </div>
+                    <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="country">
+                                <option disabled="disabled" selected="selected">Country</option>
+                                <option>Viet Nam</option>
+                                <option>US</option>
+                                <option>UK</option>
+                                <option>China</option>
+                            </select>
+                            <div class="select-dropdown"></div>
                         </div>
-                    </form>
+                    </div>
+                    <div class=" row">
+                        <div class="col-sm input-group">
+                            <input class="input--style-3" type="text" placeholder="Code+" name="title">
+                        </div>
+                        <div class="col-sm input-group" style="margin-left: 20px">
+                            <input class="input--style-3" type="text" placeholder="Phone Number" name="title">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input class="input--style-3" type="email" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="p-t-10 row" style="margin-bottom: 10px">
+                        <div class="col-sm">
+                            <input type="radio"
+                                   style="margin-right: 10px;height: 20px;width: 20px;position: absolute">
+                            <label style="color: white;margin-left: 30px">I do accept the <a href="#">Term and
+                                conditions</a> of your site</label>
+                        </div>
+                    </div>
+                    <button class="btn btn--pill btn--green up test" type="button" data-target="#exampleModal"
+                            data-toggle="modal">Submit
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header row" style="background-color: #000000;border:1px solid white">
+                <div class="col-sm-8">
+                    <h5 class="modal-title" id="exampleModalLabel"
+                        style="margin-left: 60%;font-weight: 700;color: white">INFORMATION</h5>
                 </div>
+                <div class="col-sm-4">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: white">&times;</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-4 "><label style="float: right" for="title1">Title :</label></div>
+                    <div class="col-sm-8"><input type="text" id="title1" disabled></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 lb"><label style="float: right" for="f-name">First Name : </label></div>
+                    <div class="col-sm-8"><input type="text" id="f-name" disabled></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 lb"><label style="float: right" for="l-name">Last Name : </label></div>
+                    <div class="col-sm-8"><input type="text" id="l-name" disabled></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 lb"><label style="float: right" for="position">Position : </label></div>
+                    <div class="col-sm-8"><input type="text" id="position" disabled></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 lb"><label style="float: right" for="company">Company : </label></div>
+                    <div class="col-sm-8"><input type="text" id="company" disabled></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 lb"><label style="float: right" for="business">Business Area : </label></div>
+                    <div class="col-sm-8"><input type="text" id="business" disabled></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 lb"><label style="float: right" for="employee">Employee : </label></div>
+                    <div class="col-sm-8"><input type="text" id="employee" disabled></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #28a745">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
+<!-- Jquery JS-->
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<!-- Vendor JS-->
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/datepicker/moment.min.js"></script>
+<script src="vendor/datepicker/daterangepicker.js"></script>
+
+<!-- Main JS-->
+<script src="js/global.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script>
+    let check = 0;
+    $(document).ready(function () {
+        $(".test").click(function () {
+            let title = $("#title").val();
+            let fName = $("#fname").val();
+            let lName = $("#lname").val();
+            let position = $("#positon1").val();
+            let company = $("#company-id").val();
+            let business = $("#area").val();
+            let employee = $("#employee-id").val();
+
+            $("#title1").val(title);
+            $("#f-name").val(fName);
+            $("#l-name").val(lName);
+            $("#position").val(position);
+            $("#company").val(company);
+            $("#business").val(business);
+            $("#employee").val(employee);
+
+            $("#button").show();
+        })
+    });
+
+    $(document).ready(function () {
+
+        $("#button").click(function () {
+            $("#div1").show();
+            $.ajax({
+                type: "GET", url: "https://api.meetup.com/2/cities", success: function (result) {
+                    console.log(result);
+                    var array = result["results"];
+                    console.log(array.length);
+                    let output = "<table id='tbshow'><thead><tr><th>id</th><th>zip</th><th>country</th><th>localized</th><th>distance</th><th>city</th><th>member</th></thead><tbody>";
+                    for (let i in array) {
+                        output +=
+                            "<tr><td>" +
+                            i +
+                            "</td><td>" +
+                            array[i]["zip"] +
+                            "</td><td>" +
+                            array[i]["country"] +
+                            "</td><td>" +
+                            array[i]["localized_country_name"] +
+                            "</td><td>" +
+                            array[i]["distance"] +
+                            "</td><td>" +
+                            array[i]["city"] +
+                            "</td><td>" +
+                            array[i]["member_count"] +
+                            "</td></tr>";
+                    }
+                    output += "</tbody></table>";
+                    $("#div1").html(output);
+                },
+                dataType: 'jsonp',
+            });
+            $("#button").hide();
+            $("#button1").show();
+
+        });
+
+        $("#button1").click(function () {
+            $("#div1").hide();
+            $("#button").show();
+            $("#button1").hide();
+
+        });
+
+
+    });
+
+
+</script>
+
+
+</body>
 
 </html>
 <!-- end document-->

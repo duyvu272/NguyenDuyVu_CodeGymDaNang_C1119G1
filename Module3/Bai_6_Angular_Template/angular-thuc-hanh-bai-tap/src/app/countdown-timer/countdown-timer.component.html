@@ -1,0 +1,16 @@
+<h2>Countdown Timer</h2>
+
+<div class="button">
+    <div class="">
+      <button (click)="start()">Start</button>
+      <button (click)="stop()">Stop</button>
+      <button (click)="reset()">Reset</button>
+    </div>
+</div>
+<div class="timer">
+  <span class="showtime" id="startime" *ngIf="showtime">{{ seconds }}</span>
+  <span class="showtime" *ngIf="stopt">{{ stoptime }}</span>
+  <p *ngIf="finish">{{message}}</p>
+</div>
+
+

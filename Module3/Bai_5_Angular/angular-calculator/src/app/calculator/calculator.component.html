@@ -1,0 +1,15 @@
+<h1>Calculation</h1>
+
+<input type="text" (change)="numberA=$event.target.value" placeholder="input number" style="text-align: center">
+<select  id="kq" [(ngModel)]="selectedValue" >
+  <option [value]="add(numberA, numberB)">+</option>
+  <option [value]="sub(numberA, numberB)">-</option>
+  <option [value]="division(numberA, numberB)">/</option>
+  <option [value]="multi(numberA, numberB)">*</option>
+</select>
+<input type="text" (change)="numberB=$event.target.value" placeholder="input number" style="text-align: center">
+
+<br>
+
+ <p >Ket qua : {{selectedValue}}</p>
+

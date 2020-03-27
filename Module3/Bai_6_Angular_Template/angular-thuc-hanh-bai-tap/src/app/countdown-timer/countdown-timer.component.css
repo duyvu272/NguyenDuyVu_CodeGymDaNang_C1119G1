@@ -1,0 +1,48 @@
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+button:hover{
+  background-color: deeppink;
+  font-size: 20px;
+}
+.button{
+  margin-left: 40%;
+}
+
+.timer{
+  margin-left: 45%;
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+.showtime{
+  display: block;
+  padding-top: 20px;
+}
+h2{
+  margin-left: 37%;
+  font-weight: bolder;
+  color: crimson;
+  font-size: 40px;
+}
+
+p{
+  font-size: 40px;
+  color: crimson;
+  font-weight: bolder;
+}

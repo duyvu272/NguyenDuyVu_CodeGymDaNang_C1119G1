@@ -75,3 +75,12 @@
 .music1{
     margin-left: 10%;
 }
+.button2 a{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    font-size: 30px;
+}
+#stop{
+    display: none;
+}

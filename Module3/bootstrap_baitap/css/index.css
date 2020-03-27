@@ -1,0 +1,114 @@
+.container{
+    width: 100%;
+    padding: 1px;
+}
+.d1 img{
+    width: 100%;
+    position: relative;
+}
+.d2{
+    position: absolute;
+    top: 30px;
+    right:60px;
+}
+.d2 a {
+    background-color: #da6c9e; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+/*.slide ,.carousel-inner{*/
+/*    height: 447px;*/
+/*}*/
+/* Navigation*/
+.navbar {
+    background-color: transparent;
+}
+.scrolling-navbar {
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.top-nav-collapse {
+    background-color: #34456a;
+}
+footer.page-footer {
+    background-color: #34456a;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #34456a;
+    }
+}
+
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+    height: 40%;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+    height: 50%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+.carousel .carousel-item video {
+    min-width: 100%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-fluid{
+    padding-left: 100%;
+    height: 400px;
+}
+.bg-light{
+    background-color: #fdcaca;
+}
+.footer{
+    padding-top: 10px;
+    background: #0c5460;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.card{
+    padding: 5px;
+}
+.card1{
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #banner{
+        content:url("../img/new-banner.jpg");
+        /*display: none;*/
+    }
+body{
+    background-color: #0c5460;
+}
+.slide-bar{
+    height: 400px;
+}
+
+}
+.card-img-top{
+    height: 210px;
+}
+.btn-primary{
+    margin-left: 25%;
+}

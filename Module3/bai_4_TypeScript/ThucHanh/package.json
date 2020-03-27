@@ -1,0 +1,20 @@
+{
+  "name": "thuchanh",
+  "version": "1.0.0",
+  "description": "demo node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyvu272/NguyenDuyVu_CodeGymDaNang_C1119G1.git"
+  },
+  "author": "duyvu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duyvu272/NguyenDuyVu_CodeGymDaNang_C1119G1/issues"
+  },
+  "homepage": "https://github.com/duyvu272/NguyenDuyVu_CodeGymDaNang_C1119G1#readme"
+}
