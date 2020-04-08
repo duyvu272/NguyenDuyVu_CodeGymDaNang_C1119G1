@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="img">
+    <img src="../../assets/image/angular.png">
+  </div>
+
+</div>
+
+<div class="t">
+  <form [formGroup]="registerForm" (ngSubmit)="submit()">
+    <span>Email : </span>
+    <input type="text" formControlName="email">
+    <div *ngIf="registerForm.get('email').invalid && registerForm.get('email').touched" class="alert alert-danger">
+      invalid email
+    </div>
+    <fieldset formGroupName="passGroup">
+      <span>Password : </span>
+      <input type="text" formControlName="pass">
+      <br>
+      <span>Confirm Password : </span>
+      <input type="text" formControlName="rePass">
+    </fieldset>
+    <div class="alert alert-danger" role="alert"
+         *ngIf="registerForm.hasError('passwordnotmatch', ['passGroup']) &&
+      registerForm.get('passGroup').touched">
+      Password does not match!
+    </div>
+    <span>Country : </span>
+    <select formControlName="country">
+      <option value="select" disabled>select</option>
+      <option value="vn">Viet Nam</option>
+      <option value="us">US</option>
+      <option value="uk">UK</option>
+      <option value="china">China</option>
+    </select>
+    <div>
+
+      male <input type="radio" formControlName="gender" value="male"> female <input type="radio"
+                                                                                    formControlName="gender"
+                                                                                    value="female">
+    </div>
+    <span>Age : </span>
+    <input type="text" formControlName="age">
+    <div class="alert alert-danger" *ngIf="registerForm.get('age').touched && registerForm.get('age').invalid">
+      Age invalid
+    </div>
+
+    <span>Phone : </span>
+    <input type="text" formControlName="phone">
+    <input type="submit" value="Submit">
+
+  </form>
+
+
+  <p>{{registerForm.value | json}}</p>
+</div>

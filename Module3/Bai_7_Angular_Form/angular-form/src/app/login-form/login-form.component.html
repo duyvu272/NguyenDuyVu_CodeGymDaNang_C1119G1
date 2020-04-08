@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="img">
+    <img src="../../assets/image/angular.png">
+  </div>
+
+</div>
+
+<div class="t">
+  <form [formGroup]="loginForm" (ngSubmit)="submit()">
+    <span>Email : </span>
+    <input type="text" formControlName="email">
+    <div *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched" class="alert alert-danger">
+      invalid email
+    </div>
+    <input type="text" formControlName="password">
+    <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched" class="alert alert-danger">
+      invalid Pass
+    </div>
+    <input type="submit" value="Submit">
+
+  </form>
+
+
+  <p>{{loginForm.value | json}}</p>
+</div>
