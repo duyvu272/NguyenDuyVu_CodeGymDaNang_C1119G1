@@ -1,11 +1,11 @@
-import {Component, ContentChildren, OnInit, QueryList} from '@angular/core';
+import {AfterContentInit, Component, ContentChildren, OnInit, QueryList} from '@angular/core';
 import {ImageSlideComponent} from './image-slide/image-slide.component';
 @Component({
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
   styleUrls: ['./image-slider.component.css']
 })
-export class ImageSliderComponent implements OnInit {
+export class ImageSliderComponent implements OnInit,AfterContentInit  {
   @ContentChildren(ImageSlideComponent) slides: QueryList<ImageSlideComponent>;
   component;
   activeIndex = 0;
@@ -26,9 +26,11 @@ export class ImageSliderComponent implements OnInit {
     this.component = this.slides.toArray()[this.activeIndex];
   }
   next() {
+    console.log("silde  ;"+ this.slides.length);
     if (this.activeIndex < this.slides.length - 1) {
       this.activeIndex++;
     }
+    console.log(this.activeIndex);
     this.component = this.slides.toArray()[this.activeIndex];
   }
 
