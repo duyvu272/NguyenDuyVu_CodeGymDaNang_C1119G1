@@ -1,0 +1,39 @@
+{
+  "customer": [
+    {
+      "id": 2,
+      "name": "Name2",
+      "birthday": "27-02-1993",
+      "email": "hello",
+      "phone": "0999888777",
+      "type": "Vip"
+    },
+    {
+      "id": 6,
+      "name": "Name6",
+      "birthday": "27-02-1993",
+      "email": "hello",
+      "phone": "0999888777",
+      "type": "Vip"
+    },
+    {
+      "id": 7,
+      "name": "Name7",
+      "birthday": "27-02-1993",
+      "email": "hello",
+      "phone": "0999888777",
+      "type": "Vip"
+    },
+    {
+      "id": 8,
+      "name": "Name989",
+      "birthday": "27-02-1993",
+      "email": "hello",
+      "phone": "0999888777",
+      "type": "diamond"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

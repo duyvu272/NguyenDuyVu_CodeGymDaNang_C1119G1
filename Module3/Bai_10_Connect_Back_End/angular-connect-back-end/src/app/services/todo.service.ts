@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+
 import {Observable} from "rxjs";
 import {ToDo} from "../interface/toDo";
-import {map} from "rxjs/operators";
+
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
