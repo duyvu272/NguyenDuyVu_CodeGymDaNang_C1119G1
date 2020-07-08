@@ -1,0 +1,156 @@
+{
+  "customer": [
+    {
+      "id": 2,
+      "name": "Name2",
+      "birthday": "27-02-1993",
+      "email": "hello",
+      "phone": "0999888777",
+      "type": "diamond",
+      "username": "user1",
+      "password": "123123"
+    },
+    {
+      "id": 6,
+      "name": "Name6",
+      "birthday": "27-02-1993",
+      "email": "hello",
+      "phone": "0999888777",
+      "type": "vip",
+      "username": "user1",
+      "password": "123123"
+    },
+    {
+      "name": "Ho Ngoc Ha",
+      "birthday": "29/6/1988",
+      "email": "ngocha@gmail.com",
+      "phone": "0999999999",
+      "type": "diamond",
+      "id": 9,
+      "username": "user1",
+      "password": "123123"
+    },
+    {
+      "name": "Dat 09",
+      "birthday": "11/01/1992",
+      "email": "dat@gmail.com",
+      "phone": "099999999",
+      "type": "gold",
+      "id": 10,
+      "username": "user1",
+      "password": "123123"
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 11
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 12
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 13
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 14
+    },
+    {
+      "name": "l",
+      "birthday": "",
+      "email": "",
+      "phone": "",
+      "type": "",
+      "id": 15
+    },
+    {
+      "name": "qa",
+      "birthday": "2020-04-14T17:00:00.000Z",
+      "email": "e",
+      "phone": "090909090",
+      "type": "diamond",
+      "id": 16
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "search": {},
+  "sinhvien": [
+    {
+      "name": "Vu",
+      "email": "nguyenduyvu@gmail.com",
+      "group_name": "Nhóm 1",
+      "phone": "0909888775",
+      "name_project": "project 1",
+      "instructor": "mr.nguyen",
+      "id": 1,
+      "username": "user1",
+      "password": "123123"
+    },
+    {
+      "name": "SongoHan",
+      "email": "songohan@gmail.com",
+      "name_project": "Project 2",
+      "phone": "0909999999",
+      "group_name": "Nhóm 2",
+      "instructor": "mr.nguyen",
+      "id": 2,
+      "username": "user2",
+      "password": "123123"
+    },
+    {
+      "name": "nguyen duy vu",
+      "email": "nguyenduyvu@gmail.com",
+      "name_project": "Project 5",
+      "phone": "0909009009",
+      "group_name": "Nhóm 3",
+      "instructor": "mr.nguyen",
+      "id": 4,
+      "username": "user3",
+      "password": "123123"
+    },
+    {
+      "id": "585557315392622",
+      "name": "Dom King",
+      "email": "kingdomstory272@gmail.com",
+      "photoUrl": "https://graph.facebook.com/585557315392622/picture?type=normal",
+      "firstName": "Dom",
+      "lastName": "King",
+      "authToken": "EAAWUQ3glwI4BAEwF2WuH2zxuKJOOTGwTEFnXzTWghe1tZCJvJpuafEPtoDnzWvfXvvvop1bfkyeDub7sD5tfb6KJariegZBkjzoP7P5KELkPfgBKt400LSPa8KIjTJZC455UEQ1g0LWISOTuAc3wjbEO8OojbgxvyboeMSg1RAqOxb5AWLWSXhk4gPUscZCQoFa4NY8L6QZDZD",
+      "facebook": {
+        "name": "Dom King",
+        "email": "kingdomstory272@gmail.com",
+        "picture": {
+          "data": {
+            "height": 50,
+            "is_silhouette": false,
+            "url": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=585557315392622&height=50&width=50&ext=1589689547&hash=AeQC4BT5cbVXml1g",
+            "width": 50
+          }
+        },
+        "first_name": "Dom",
+        "last_name": "King",
+        "id": "585557315392622"
+      },
+      "provider": "FACEBOOK"
+    }
+  ]
+}

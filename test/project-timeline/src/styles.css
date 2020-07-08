@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  background-color: black;
+  color: darkgray;
+}
+
+.segment {
+  background-color: darkgray;
+  border-radius: 5px;
+  height: 12px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="main-content">
+    <p th:if="${param.error}" class="error">Invalid email or password</p>
+    <p th:if="${param.logout}" class="success">You have been logged out</p>
+    <h3>Login to continue</h3>
+    <form th:action="@{/login}" method="POST">
+        <input type="text" name="email" placeholder="Your email" /><br />
+        <input type="password" name="password" placeholder="Your password" /><br />
+        <button type="submit">Login</button> <br />
+    </form>
+
+    <table id="tble">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tr th:each="row,istart : ${list}">
+            <td th:text="${istart.index +1}"></td>
+            <td th:text="${row.getIdRole()}"></td>
+            <td th:text="${row.getName()}"></td>
+        </tr>
+    </table>
+
+
+    <table id="tble1">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Pass</th>
+            <th>Role</th>
+        </tr>
+        </thead>
+        <tr th:each="row,istart : ${listUser}">
+            <td th:text="${istart.index +1}"></td>
+            <td th:text="${row.getId()}"></td>
+            <td th:text="${row.getEmail()}"></td>
+            <td th:text="${row.getPassword()}"></td>
+            <td th:text="${row.getRoles()}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

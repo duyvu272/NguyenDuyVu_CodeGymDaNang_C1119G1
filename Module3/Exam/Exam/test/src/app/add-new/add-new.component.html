@@ -1,0 +1,64 @@
+<div class="bg-contact3" style="background-image: url('assets/images/bg-01.jpg');">
+  <div class="container-contact3">
+    <div class="wrap-contact3">
+      <form class="contact3-form validate-form" [formGroup]="form">
+	      <span class="contact3-form-title">
+					Add New
+					</span>
+
+        <div class="form-group wrap-input3 validate-input" >
+          <input type="text" id="name" class="input3" formControlName="name" placeholder="name">
+          <span class="focus-input3"></span>
+          <app-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please inform your name">
+          </app-field-error-display>
+        </div>
+
+        <div class="form-group wrap-input3 validate-input" >
+          <input type="text" id="group_name" class="input3" formControlName="group_name" placeholder="Group name">
+          <span class="focus-input3"></span>
+          <app-field-error-display [displayError]="isFieldValid('group_name')" errorMsg="Please inform your group name">
+          </app-field-error-display>
+        </div>
+
+        <div class="form-group wrap-input3 validate-input">
+          <input type="text" id="name_project" class="input3" formControlName="name_project" placeholder="Project name">
+          <span class="focus-input3"></span>
+          <app-field-error-display [displayError]="isFieldValid('name_project')" errorMsg="Please inform your project name">
+          </app-field-error-display>
+        </div>
+
+        <div class="form-group wrap-input3 validate-input">
+          <label style="color:#ffffff;margin-right: 15px;font-size: 15px;font-family: Poppins-Regular,serif;">Instructor : </label>
+          <select id="instructor" formControlName="instructor">
+            <option value="mr.trung">Mr. Trung</option>
+            <option value="ms.tam">Ms. Tam</option>
+            <option value="mr.nguyen">Mr. Nguyen</option>
+            <option value="mr.tien">Mr. Tien</option>
+          </select>
+          <app-field-error-display [displayError]="isFieldValid('instructor')" errorMsg="Please choice your instructor">
+          </app-field-error-display>
+        </div>
+
+        <div class="form-group wrap-input3" >
+          <input type="text" id="email" class=" input3" formControlName="email" placeholder="Email">
+          <span class="focus-input3"></span>
+          <app-field-error-display [displayError]="isFieldValid('email')" errorMsg="Please inform your email">
+          </app-field-error-display>
+        </div>
+
+        <div class="form-group wrap-input3" >
+          <input type="text" id="phone" class=" input3" formControlName="phone" placeholder="phone">
+          <span class="focus-input3"></span>
+          <app-field-error-display [displayError]="isFieldValid('phone')" errorMsg="Please inform your phone">
+          </app-field-error-display>
+        </div>
+
+
+
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        <button class="btn" (click)="reset()">Reset</button>
+
+      </form>
+    </div>
+  </div>
+</div>

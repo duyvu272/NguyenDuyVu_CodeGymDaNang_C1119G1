@@ -1,0 +1,25 @@
+.option{
+  display: inline-flex;
+}
+.option1{
+  margin-left: 10px;
+  width: 60px;
+  border-radius: 12px;
+}
+.pagi{
+  margin-left: 40%;
+  margin-top: 10px;
+}
+.search{
+  float: right;
+  margin: 10px;
+}
+.btn1{
+  width: 100px;
+  display: block;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 10px;
+  float: right;
+  margin-left: 50%;
+}

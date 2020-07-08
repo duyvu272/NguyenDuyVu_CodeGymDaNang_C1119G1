@@ -1,3 +1,7 @@
+<div class="search">
+  <app-search (data)="handleData($event)"></app-search>
+</div>
+
 <div id="content">
   <table id="tble">
     <thead>
@@ -11,7 +15,7 @@
       <th colspan="3">Option</th>
     </tr>
     </thead>
-    <tr *ngFor = "let customer of customers">
+    <tr *ngFor = "let customer of customers | paginate: { itemsPerPage: 5, currentPage: p }">
       <td>{{customer.id}}</td>
       <td>{{customer.name}}</td>
       <td>{{customer.birthday}}</td>
@@ -27,10 +31,14 @@
 
     </tr>
   </table>
+  <div class="pagi">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+
 
   <div class="pagination">
 
   </div>
 
-
+<h1>{{data | json}}</h1>
 </div>

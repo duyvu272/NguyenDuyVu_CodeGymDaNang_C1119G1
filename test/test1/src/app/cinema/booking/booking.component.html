@@ -1,0 +1,70 @@
+<table>
+    <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+        {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+      </button>
+    <mat-horizontal-stepper #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Chọn Phim</ng-template>
+
+          <mat-list  class="film">
+          <mat-list-item  *ngFor="let film of films" >
+               <button mat-stroked-button matStepperNext color="primary"
+               style="width: 100px; margin-left:0px"
+             >{{film.name}}</button>
+
+            </mat-list-item>
+           </mat-list>
+        </form>
+      </mat-step>
+
+
+
+
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Chọn Ngày</ng-template>
+          <mat-list  class="film">
+            <mat-list-item  *ngFor="let day of films[i].days">
+                 <button mat-stroked-button matStepperNext color="primary"
+                 style="width: 100px; margin-left:0px"
+                   >{{day}}</button>
+              </mat-list-item>
+
+             </mat-list> -->
+            <button mat-raised-button matStepperPrevious  color="primary" style="margin-right: 15px;">Chọn Phim</button>
+            <button mat-raised-button matStepperNext  color="primary">Chọn Giờ</button> -->
+
+         </form>
+      </mat-step>
+
+
+
+
+
+
+
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Chọn Giờ</ng-template>
+          <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                   required>
+          </mat-form-field>
+          <div>
+            <button mat-raised-button matStepperPrevious  color="primary" style="margin-right: 15px;">Chọn Ngày</button>
+            <button mat-raised-button matStepperNext  color="primary">Đặt Vé</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Kết Thúc</ng-template>
+        <p>Đặt vé thành công</p>
+        <div>
+          <button mat-raised-button matStepperPrevious  color="primary" style="margin-right: 15px;">Chọn Giờ</button>
+          <button mat-raised-button (click)="stepper.reset()"  color="primary">Thông Tin Đặt Vé</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+</table>

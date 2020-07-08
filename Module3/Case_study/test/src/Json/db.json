@@ -6,7 +6,7 @@
       "birthday": "27-02-1993",
       "email": "hello",
       "phone": "0999888777",
-      "type": "Vip"
+      "type": "diamond"
     },
     {
       "id": 6,
@@ -14,26 +14,75 @@
       "birthday": "27-02-1993",
       "email": "hello",
       "phone": "0999888777",
-      "type": "Vip"
+      "type": "vip"
     },
     {
-      "id": 7,
-      "name": "Name7",
-      "birthday": "27-02-1993",
-      "email": "hello",
-      "phone": "0999888777",
-      "type": "Vip"
+      "name": "Ho Ngoc Ha",
+      "birthday": "29/6/1988",
+      "email": "ngocha@gmail.com",
+      "phone": "0999999999",
+      "type": "diamond",
+      "id": 9
     },
     {
-      "id": 8,
-      "name": "Name989",
-      "birthday": "27-02-1993",
-      "email": "hello",
-      "phone": "0999888777",
-      "type": "diamond"
+      "name": "Dat 09",
+      "birthday": "11/01/1992",
+      "email": "dat@gmail.com",
+      "phone": "099999999",
+      "type": "gold",
+      "id": 10
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 11
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 12
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 13
+    },
+    {
+      "name": "Thor09",
+      "birthday": "22/2/1995",
+      "email": "thor@gmail.com",
+      "phone": "099999999999",
+      "type": "diamond",
+      "id": 14
+    },
+    {
+      "name": "l",
+      "birthday": "",
+      "email": "",
+      "phone": "",
+      "type": "",
+      "id": 15
+    },
+    {
+      "name": "qa",
+      "birthday": "2020-04-14T17:00:00.000Z",
+      "email": "e",
+      "phone": "090909090",
+      "type": "diamond",
+      "id": 16
     }
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "search": {}
 }

@@ -2,83 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad59fc01-b7db-406a-a25f-864f7507b0d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/BaiTap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/src/ExcuteQuadratic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/src/ExcuteTimeStamp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/src/ExuteFan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/src/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/src/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/BaiTap/src/StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/ThucHanh/ThucHanh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/ThucHanh/src/ExcueRetangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/3.Class&amp;OOP/ThucHanh/src/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/BaiTap/BaiTap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/BaiTap/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/BaiTap/src/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/BaiTap/src/Excute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/BaiTap/src/Point2And3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/BaiTap/src/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/ThucHanh/ThucHanh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/ThucHanh/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/ThucHanh/src/ExcuteS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/ThucHanh/src/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/ThucHanh/src/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/4.KeThua/ThucHanh/src/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/BaiTap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/colorable/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/colorable/Colorable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/colorable/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/colorable/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/colorable/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/colorable/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/comparableShape/ComparableCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/comparableShape/ComparableRectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/comparableShape/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/shape/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/shape/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/shape/Resizeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/shape/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/BaiTap/src/shape/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/ThucHanh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/animal/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/animal/Chiken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/animal/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/edible/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/edible/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/edible/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/edible/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/shape/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/shape/CircleComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/shape/CircleComparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/shape/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/shape/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/5.AdvencedOOP/ThucHanh/src/shape/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/CaseStudy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/BirthdayException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/EmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/FuncReadFileCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/FuncWriteFileCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/GenderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/IdCardException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/controllers/NameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/models/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/models/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/models/Services.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/models/Villa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy/src/views/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module2/CaseStudy1/CaseStudy1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/spring-scurity/src/main/java/codegym/com/springscurity/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module3/spring-scurity/src/main/java/codegym/com/springscurity/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module2/1.NgonNgLapTrinhJaVa/BaiTap/out/production/BaiTap/IsPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/1.NgonNgLapTrinhJaVa/BaiTap/out/production/BaiTap/IsPrime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module2/1.NgonNgLapTrinhJaVa/BaiTap/src/IsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/1.NgonNgLapTrinhJaVa/BaiTap/src/IsPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module2/2.MangVaPhuongThuc/BaiTap/src/CheckSumSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/2.MangVaPhuongThuc/BaiTap/src/CheckSumSide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module2/2.MangVaPhuongThuc/BaiTap/src/SumXMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/2.MangVaPhuongThuc/BaiTap/src/SumXMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Bai_7_Angular_Form/angular-form/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Bai_7_Angular_Form/angular-form/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Bai_7_Angular_Form/angular-form/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Bai_7_Angular_Form/angular-form/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/Json/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/Json/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-contact/add-contact.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-contact/add-contact.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-contact/add-contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-contact/add-contact.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-contact/add-contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-contact/add-contact.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-customer/add-customer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-customer/add-customer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-customer/add-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-customer/add-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-customer/add-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-customer/add-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-employee/add-employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-employee/add-employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-employee/add-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/add-employee/add-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/display-customer/display-customer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/display-customer/display-customer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/display-customer/display-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/display-customer/display-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/display-customer/display-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/display-customer/display-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/edit-customer/edit-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/edit-customer/edit-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/services/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/app/services/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/assets/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/assets/css/sb-admin-2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/assets/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/assets/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/Case_study/test/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Case_study/test/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,12 +48,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
-    <option name="height" value="728" />
-  </component>
   <component name="ProjectId" id="1W4VzR8lzmwN7OW9OZohhBiD3be" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -114,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Module2/2.MangVaPhuongThuc/BaiTap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test/project-timeline" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -146,6 +93,8 @@
       <workItem from="1578409117463" duration="1411000" />
       <workItem from="1578461706153" duration="256000" />
       <workItem from="1578579091513" duration="1541000" />
+      <workItem from="1591973146810" duration="757000" />
+      <workItem from="1592010546749" duration="105000" />
     </task>
     <servers />
   </component>
@@ -153,14 +102,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="133" key="FileChooserDialogImpl" timestamp="1578581474952">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1592010654228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="133" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578581474952" />
-    <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1578461958570" />
-    <state x="379" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1578461937546">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592010654228" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592010571537">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1578461937546" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592010571537" />
   </component>
 </project>

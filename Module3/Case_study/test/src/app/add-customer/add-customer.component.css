@@ -1,0 +1,7 @@
+#picker1, #picker2{
+  display: inline-block;
+}
+
+#picker2{
+  float: right;
+}

@@ -45,6 +45,7 @@
               <a class="collapse-item" [routerLink]="['/addService']">Add new Service</a>
               <a class="collapse-item" [routerLink]="['/addContact']">Add new Contact</a>
               <a class="collapse-item" [routerLink]="['/addContactDetail']">Add new Contact detail</a>
+              <a class="collapse-item" [routerLink]="['/addEmployee']">Add new Contact detail</a>
             </div>
           </div>
         </li>
@@ -104,17 +105,17 @@
             </button>
 
             <!-- Topbar Search -->
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-              <div class="input-group">
-                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                       aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search fa-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
+<!--            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" [formGroup]="searchForm" (ngSubmit)="search()">-->
+<!--              <div class="input-group">-->
+<!--                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."-->
+<!--                       aria-label="Search" aria-describedby="basic-addon2" formControlName="data"  >-->
+<!--                <div class="input-group-append">-->
+<!--                  <button class="btn btn-primary" type="submit">-->
+<!--                    <i class="fas fa-search fa-sm"></i>-->
+<!--                  </button>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </form>-->
 
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -184,7 +185,7 @@
           <div class="container-fluid">
 
             <router-outlet></router-outlet>
-
+<!--            <app-display-customer [childData]="data" disabled="true"></app-display-customer>-->
           </div>
           <!-- /.container-fluid -->
 

@@ -6,13 +6,15 @@ import { ThucHanhToDoComponent } from './thuc-hanh-to-do/thuc-hanh-to-do.compone
 import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThucHanhToDoComponent,
     RegisterFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    TestComponent
   ],
     imports: [
         BrowserModule,

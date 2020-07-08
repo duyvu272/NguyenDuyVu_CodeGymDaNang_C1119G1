@@ -18,6 +18,18 @@ import {DisplayContactDetailComponent} from './display-contact-detail/display-co
 import { HttpClientModule } from '@angular/common/http';
 import { EditCustomerComponent } from './edit-customer/edit-customer.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { SearchComponent } from './search/search.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MAT_DATE_FORMATS, MatNativeDateModule} from '@angular/material/core';
+import { FieldErrorDisplayComponent } from './field-error-display/field-error-display.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +46,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     DisplayServiceComponent,
     DisplayContactComponent,
     DisplayContactDetailComponent,
-    EditCustomerComponent
-  ],
+        EditCustomerComponent,
+        SearchComponent,
+        FieldErrorDisplayComponent,
+      ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule,
     RouterModule.forRoot([
@@ -51,7 +65,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
       {path: 'displayService', component: DisplayServiceComponent},
       {path: 'displayContactDetail', component: DisplayContactDetailComponent},
       {path: 'customer/:id/edit', component: EditCustomerComponent}
-    ]), ReactiveFormsModule
+    ]), ReactiveFormsModule, NgxPaginationModule, MatDatepickerModule,
+    MatFormFieldModule, MatIconModule, MatInputModule, BrowserAnimationsModule,
+    MatNativeDateModule, MatDatepickerModule,
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]
